@@ -8,6 +8,8 @@ from django.views.i18n import set_language
 from mezzanine.core.views import direct_to_template
 from mezzanine.conf import settings
 
+#Ale: pagedown
+#import mezzanine_pagedown.urls
 
 admin.autodiscover()
 
@@ -26,7 +28,14 @@ if settings.USE_MODELTRANSLATION:
         url('^i18n/$', set_language, name='set_language'),
     ]
 
+#Ale: pagedown
+#urlpatterns += [
+#    url("^pagedown/", include(mezzanine_pagedown.urls)),
+#]
+
 urlpatterns += [
+
+    
     # We don't want to presume how your homepage works, so here are a
     # few patterns you can use to set it up.
 
