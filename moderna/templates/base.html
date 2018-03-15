@@ -62,20 +62,19 @@
 <div id="wrapper">
 	<header>
 <div class="navbar navbar-default navbar-static-top" role="navigation">
-<div class="container">
-<div class="navbar-header">
-   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-  {% if settings.SITE_TITLE %}<a class="navbar-brand" href="/">{{ settings.SITE_TITLE }}</a>{% endif %}
-    
-</div>
-<div class="navbar-collapse collapse">
-       {% page_menu "pages/menus/dropdown.html" %}
-</div>
-</div>
+	<div class="container">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		  </button>
+		  {% if settings.SITE_TITLE %}<a class="navbar-brand" href="/">{{ settings.SITE_TITLE }}</a>{% endif %}
+		</div>
+		<div class="navbar-collapse collapse">
+		       {% page_menu "pages/menus/dropdown.html" %}
+		</div>
+	</div>
 </div>
 	</header>
 {% block all_content %}

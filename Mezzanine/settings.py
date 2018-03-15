@@ -230,7 +230,7 @@ if DJANGO_VERSION < (1, 9):
 ################
 
 INSTALLED_APPS = (
-    "moderna",
+    #"moderna",
     # "flat",
     #"nova",
     "django.contrib.admin",
