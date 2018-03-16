@@ -143,15 +143,15 @@ FILE_UPLOAD_PERMISSIONS = 0o644
 DATABASES = {
     "default": {
         # Add "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
-        "ENGINE": "django.db.backends.",
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
         # DB name or path to database file if using sqlite3.
-        "NAME": "",
+        "NAME": "mezzanine",
         # Not used with sqlite3.
-        "USER": "",
+        "USER": "amarin",
         # Not used with sqlite3.
-        "PASSWORD": "",
+        "PASSWORD": "Mezzanine",
         # Set to empty string for localhost. Not used with sqlite3.
-        "HOST": "",
+        "HOST": "localhost",
         # Set to empty string for default. Not used with sqlite3.
         "PORT": "",
     }
@@ -231,7 +231,7 @@ if DJANGO_VERSION < (1, 9):
 
 INSTALLED_APPS = (
     "mezzanine_pagedown",
-    #"moderna",
+    "moderna",
     # "flat",
     #"nova",
     "django.contrib.admin",
@@ -357,3 +357,5 @@ EMAIL_PORT = 587
 #PAGEDOWN_MARKDOWN_EXTENSIONS = ('extra','codehilite','toc')
 #RICHTEXT_FILTER_LEVEL = 3
 #PAGEDOWN_SERVER_SIDE_PREVIEW = True
+
+SECRET_KEY=os.environ.get('SECRET_KEY')
