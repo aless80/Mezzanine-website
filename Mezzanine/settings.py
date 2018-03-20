@@ -346,7 +346,7 @@ else:
 MAIL_HOST_USER = 'AlessandroMarin80@gmail.com'
 EMAIL_USE_TLS = True 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_PASSWORD = 'Mieke8213!'
+EMAIL_HOST_PASSWORD = 'ahahah'
 EMAIL_PORT = 587
 
 #####################
@@ -359,3 +359,7 @@ EMAIL_PORT = 587
 #PAGEDOWN_SERVER_SIDE_PREVIEW = True
 
 SECRET_KEY=os.environ.get('SECRET_KEY')
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static-common"),
+]
