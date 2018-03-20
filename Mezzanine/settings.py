@@ -230,7 +230,7 @@ if DJANGO_VERSION < (1, 9):
 ################
 
 INSTALLED_APPS = (
-    "mezzanine_pagedown",
+    "resume",
     "moderna",
     # "flat",
     #"nova",

@@ -10,6 +10,7 @@ from mezzanine.conf import settings
 
 #Ale: pagedown
 #import mezzanine_pagedown.urls
+from resume import views
 
 admin.autodiscover()
 
@@ -35,6 +36,8 @@ if settings.USE_MODELTRANSLATION:
 
 urlpatterns += [
 
+    #Ale
+    url(r'^resume/$', views.index, name='index'),
     
     # We don't want to presume how your homepage works, so here are a
     # few patterns you can use to set it up.
