@@ -359,3 +359,7 @@ EMAIL_PORT = 587
 #PAGEDOWN_SERVER_SIDE_PREVIEW = True
 
 SECRET_KEY=os.environ.get('SECRET_KEY')
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "/moderna"),
+]
