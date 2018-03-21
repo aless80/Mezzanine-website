@@ -100,18 +100,18 @@
 <div class="container">
 	<div class="row">
 		<div class="col-lg-12">
-<ul class="breadcrumb">
-{% spaceless %}
-{% block breadcrumb_menu %}{% page_menu "pages/menus/breadcrumb.html" %}{% endblock %}
-{% endspaceless %}
-</ul>
-</div>
-</div>
+			<ul class="breadcrumb">
+			{% spaceless %}
+			{% block breadcrumb_menu %}{% page_menu "pages/menus/breadcrumb.html" %}{% endblock %}
+			{% endspaceless %}
+			</ul>
+		</div>
+	</div>
 </div>
 </section>
 {% endblock %}
 {% block title_wrapper %}
-<section class="callaction">
+	<section class="callaction">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
@@ -126,68 +126,66 @@
 </section>
 {% endblock %}
 <section id="{% block section_id %}content{% endblock %}">
-<div class="container">
-<div class="row">
-{% block left_wrapper %}
-	<div class="col-md-{% block left_col_size %}2{% endblock %} {% block left_class %}left{% endblock %}">
-		{% block left_panel %}
-		<div class="panel panel-default tree">{% page_menu "pages/menus/tree.html" %}</div>
+	<div class="container">
+		<div class="row">
+		{% block left_wrapper %}
+			<div class="col-md-{% block left_col_size %}2{% endblock %} {% block left_class %}left{% endblock %}">
+				{% block left_panel %}
+				<div class="panel panel-default tree">{% page_menu "pages/menus/tree.html" %}</div>
+				{% endblock %}
+			</div>
 		{% endblock %}
+		{% block main_wrapper %}
+
+		<div class="col-md-{% block main_col_size %}7{% endblock %} {% block main_class %}middle{% endblock %}">
+			{% block main %}{% endblock %}
+		</div>
+		{% endblock %}
+
+		{% block right_wrapper %}
+
+		<div class="col-md-{% block right_col_size %}3{% endblock %} {% block right_class %}right{% endblock %}">
+			{% nevercache %}
+			{% include "includes/user_panel.html" %}
+			{% endnevercache %}
+			<aside class="right-sidebar">
+		
+			{% block right_panel %}
+			{% ifinstalled mezzanine.twitter %}
+			{% include "twitter/tweets.html" %}
+			{% endifinstalled %}
+			{% endblock %}
+			
+			</aside>
+		</div>
+	{% endblock %}
 	</div>
-{% endblock %}
-{% block main_wrapper %}
-
-<div class="col-md-{% block main_col_size %}7{% endblock %} {% block main_class %}middle{% endblock %}">
-    {% block main %}{% endblock %}
-</div>
-{% endblock %}
-
-{% block right_wrapper %}
-
-<div class="col-md-{% block right_col_size %}3{% endblock %} {% block right_class %}right{% endblock %}">
-    {% nevercache %}
-    {% include "includes/user_panel.html" %}
-    {% endnevercache %}
-	<aside class="right-sidebar">
-   
-    {% block right_panel %}
-    {% ifinstalled mezzanine.twitter %}
-    {% include "twitter/tweets.html" %}
-    {% endifinstalled %}
-    {% endblock %}
-    
-	</aside>
-</div>
-{% endblock %}
-</div>
 </div>
 </section>
 {% endblock %}
 <footer>
 <div class="container">
 {% page_menu "pages/menus/footer.html" %}
-<div id="sub-footer">
-<div class="row">
-<div class="col-lg-6">
-					<div class="copyright">
-						<p>
-							<span>Template by </span><a target="_blank" href="http://bootstraptaste.com">Bootstraptaste</a>. Mezzanine theme by <a target="_blank" href="http://thecodinghouse.in">CodingHouse</a>
-						</p>
-					</div>
+	<div id="sub-footer">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="copyright">
+					<p>
+						<span>Template by </span><a target="_blank" href="http://bootstraptaste.com">Bootstraptaste</a>. Mezzanine theme by <a target="_blank" href="http://thecodinghouse.in">CodingHouse</a>
+					</p>
 				</div>
-				<div class="col-lg-6">
-					<ul class="social-network">
-						<li><a title="" data-placement="top" href="#" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
-						<li><a title="" data-placement="top" href="#" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
-						<li><a title="" data-placement="top" href="#" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-						<li><a title="" data-placement="top" href="#" data-original-title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
-						<li><a title="" data-placement="top" href="#" data-original-title="Google plus"><i class="fa fa-google-plus"></i></a></li>
-					</ul>
-				</div>
-		
-
-</div>
-</div>
+			</div>
+			<div class="col-lg-6">
+				<ul class="social-network">
+					<li><a title="" data-placement="top" href="#" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
+					<li><a title="" data-placement="top" href="#" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
+					<li><a title="" data-placement="top" href="#" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+					<li><a title="" data-placement="top" href="#" data-original-title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+					<li><a title="" data-placement="top" href="#" data-original-title="Google plus"><i class="fa fa-google-plus"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 </div>
 </footer>
 </div>

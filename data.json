@@ -1,0 +1,907 @@
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$100000$pe599X7B8YyS$+Ijv1/dyiZsU+1ucdxTpGWHFuGb/oJAA07RmWdfYeIY=",
+        "last_login": "2018-03-21T03:42:00.899Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2018-03-05T02:15:33.884Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "3okun2gq9y2e6p6p53j1n8u2h7l4iuja",
+    "fields": {
+        "session_data": "ODM5MTExZGZiYmQ5OWE4MmI0MmVmNGYzN2JkMTc0Njg2YTc1ZDcxMzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6IjEiLCJfYXV0aF91c2VyX2hhc2giOiIzODRiODY3MzAwMTYxMjNjYzE3OGFiZDBlOWNhYTMzZjJkNmM5N2IzIn0=",
+        "expire_date": "2018-03-19T02:15:49.166Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "5vmylk30ftemkjy8allgwlntque4l3p2",
+    "fields": {
+        "session_data": "NTJkMDQwNzAxNzFiMzFlMzg3NzcwYTgxYTcwZjJiNTYwNjUwMWY4NTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIzODRiODY3MzAwMTYxMjNjYzE3OGFiZDBlOWNhYTMzZjJkNmM5N2IzIn0=",
+        "expire_date": "2018-03-19T14:09:43.712Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ff5s35bd0yke8pdhjazf5tf9i1bp8ak9",
+    "fields": {
+        "session_data": "ODM5MTExZGZiYmQ5OWE4MmI0MmVmNGYzN2JkMTc0Njg2YTc1ZDcxMzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6IjEiLCJfYXV0aF91c2VyX2hhc2giOiIzODRiODY3MzAwMTYxMjNjYzE3OGFiZDBlOWNhYTMzZjJkNmM5N2IzIn0=",
+        "expire_date": "2018-03-19T02:40:00.696Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "iirj7q4ul3vpkb5ilc274kky5g7kofpf",
+    "fields": {
+        "session_data": "ODM5MTExZGZiYmQ5OWE4MmI0MmVmNGYzN2JkMTc0Njg2YTc1ZDcxMzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6IjEiLCJfYXV0aF91c2VyX2hhc2giOiIzODRiODY3MzAwMTYxMjNjYzE3OGFiZDBlOWNhYTMzZjJkNmM5N2IzIn0=",
+        "expire_date": "2018-03-20T00:44:53.257Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "lnqzp2eg1w2sxln9bmmj0su8safu3w1h",
+    "fields": {
+        "session_data": "N2FkZDJkZGM0MjgwNjE4MDM1OGIzN2FkODMzOTZhMDEwOTIzOWNmZTp7Il9hdXRoX3VzZXJfaGFzaCI6IjM4NGI4NjczMDAxNjEyM2NjMTc4YWJkMGU5Y2FhMzNmMmQ2Yzk3YjMiLCJfYXV0aF91c2VyX2lkIjoiMSIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
+        "expire_date": "2018-04-04T03:42:00.921Z"
+    }
+},
+{
+    "model": "resume.personalinfo",
+    "pk": 1,
+    "fields": {
+        "first_name": "Alessandro",
+        "middle_name": "",
+        "last_name": "Marin",
+        "suffix": "PhD",
+        "locality": "Boston",
+        "region": "MA",
+        "title": "Support Specialist - Business Intelligence and Analytics",
+        "email": "AlessandroMarin80@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/alessandromarin80/",
+        "facebook": "",
+        "github": "https://github.com/aless80",
+        "site": "https://aless80.pythonanywhere.com/",
+        "twittername": ""
+    }
+},
+{
+    "model": "resume.overview",
+    "pk": 1,
+    "fields": {
+        "text": "Support specialist with 7 years of doctoral and post-doctoral academic experience in solar energy research. \r\nExpertise in programming, data acquisition, data analysis, and modeling including statistical analysis, machine learning. Strong background in customer communication. \r\nI am interested in leveraging my skills for a role in Development."
+    }
+},
+{
+    "model": "resume.education",
+    "pk": 1,
+    "fields": {
+        "name": "University of Padova",
+        "name2": "Karolinska Institute",
+        "location": "Padova, Italy",
+        "location2": "Stockholm, Sweden",
+        "schoolurl": "http://www.unipd.it/en/",
+        "schoolurl2": "https://ki.se/en/neuro/ulfendahl-laboratory",
+        "start_date": "1999-09-01",
+        "end_date": "2005-11-30",
+        "degree": "BSc in Physics, MSc in Applied Physics",
+        "description": "Studied Physics with minor in Applied Physics. Master thesis in Biophysics of the cochlea"
+    }
+},
+{
+    "model": "resume.education",
+    "pk": 2,
+    "fields": {
+        "name": "Conservatory of Music Benedetto Marcello",
+        "name2": "",
+        "location": "Venice, Italy",
+        "location2": "",
+        "schoolurl": "http://www.conservatoriovenezia.net/",
+        "schoolurl2": "",
+        "start_date": "2001-09-01",
+        "end_date": "2004-06-30",
+        "degree": "Bachelor of Music, Piano",
+        "description": "3 years piano, 1 year composition"
+    }
+},
+{
+    "model": "resume.education",
+    "pk": 3,
+    "fields": {
+        "name": "Vrije Universiteit",
+        "name2": "",
+        "location": "Amsterdam, the Netherlands",
+        "location2": "",
+        "schoolurl": "https://www.nat.vu.nl/en/research/biophysics/index.aspx",
+        "schoolurl2": "",
+        "start_date": "2005-04-01",
+        "end_date": "2012-06-30",
+        "degree": "PhD in Biophysics of Photosynthesis",
+        "description": "Full time research in biophysics of photosynthesis"
+    }
+},
+{
+    "model": "resume.job",
+    "pk": 1,
+    "fields": {
+        "company": "Delft University of Technology",
+        "companyurl": "https://www.tudelft.nl/en/",
+        "location": "Delft, the Netherlands",
+        "title": "Postdoctoral Scientist",
+        "description": "Investigated the molecular electronic processes in organic semiconductors by modeling spectroscopic data",
+        "start_date": "2011-09-01",
+        "end_date": "2013-06-30",
+        "is_current": false,
+        "is_public": true,
+        "company_image": ""
+    }
+},
+{
+    "model": "resume.job",
+    "pk": 2,
+    "fields": {
+        "company": "InterSystems Co.",
+        "companyurl": "https://www.intersystems.com/",
+        "location": "Cambridge, MA",
+        "title": "Support Specialist - Business Intelligence and Analytics",
+        "description": "Provide technical support for InterSystems\u2019 Business Intelligence platform <a href=\"http://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=D2GS_ch_intro\" target=\"_block\">DeepSee<a>",
+        "start_date": "2014-04-01",
+        "end_date": "2020-04-01",
+        "is_current": true,
+        "is_public": true,
+        "company_image": ""
+    }
+},
+{
+    "model": "resume.job",
+    "pk": 3,
+    "fields": {
+        "company": "Vrije Universiteit",
+        "companyurl": "https://www.nat.vu.nl/en/research/biophysics/index.aspx",
+        "location": "Amsterdam,<br>the Netherlands",
+        "title": "Ph.D. in Biophysics of Photosynthesis",
+        "description": "Reseached the transport of light energy in plant and algal photosynthesis",
+        "start_date": "2006-04-01",
+        "end_date": "2011-06-30",
+        "is_current": false,
+        "is_public": true,
+        "company_image": ""
+    }
+},
+{
+    "model": "resume.job",
+    "pk": 4,
+    "fields": {
+        "company": "Karolinska Institute",
+        "companyurl": "https://ki.se/en/neuro/ulfendahl-laboratory",
+        "location": "Stockholm, Sweden",
+        "title": "Master Thesis in Hearing Research",
+        "description": "Devised and developed a MATLAB algorithm able to couple models to microscopic\r\nmovies of the inner ear",
+        "start_date": "2004-08-01",
+        "end_date": "2005-06-30",
+        "is_current": false,
+        "is_public": true,
+        "company_image": ""
+    }
+},
+{
+    "model": "resume.jobaccomplishment",
+    "pk": 1,
+    "fields": {
+        "description": "Solve customer issues and requests (400+ till date), coordinate with clients and development on any proposed changes",
+        "job": 2,
+        "order": 1
+    }
+},
+{
+    "model": "resume.jobaccomplishment",
+    "pk": 3,
+    "fields": {
+        "description": "Developed a nonlinear superposition model in MATLAB to extract charge\r\nyields from spectroscopic data",
+        "job": 1,
+        "order": 1
+    }
+},
+{
+    "model": "resume.jobaccomplishment",
+    "pk": 5,
+    "fields": {
+        "description": "Development of applications using HTML, Javascript, ObjectScript, SQL, MDX",
+        "job": 2,
+        "order": 2
+    }
+},
+{
+    "model": "resume.jobaccomplishment",
+    "pk": 6,
+    "fields": {
+        "description": "Develop and improve analytical models, architecture, software performance, and dashboards for Business Intelligence",
+        "job": 2,
+        "order": 3
+    }
+},
+{
+    "model": "resume.jobaccomplishment",
+    "pk": 7,
+    "fields": {
+        "description": "Developed MATLAB software for data processing, performed model-based\r\nanalysis of spectroscopic data",
+        "job": 3,
+        "order": 1
+    }
+},
+{
+    "model": "resume.jobaccomplishment",
+    "pk": 8,
+    "fields": {
+        "description": "Co-developer of the C (LabWindows) software for a laser detector. Set up\r\nreal-time instrument control and digital data processing at high-repetition rates",
+        "job": 3,
+        "order": 2
+    }
+},
+{
+    "model": "resume.jobaccomplishment",
+    "pk": 9,
+    "fields": {
+        "description": "Published 6 peer-reviewed publications (4 first author) in academic journals",
+        "job": 3,
+        "order": 3
+    }
+},
+{
+    "model": "resume.jobaccomplishment",
+    "pk": 10,
+    "fields": {
+        "description": "Published a peer reviewed publication in an academic journal",
+        "job": 4,
+        "order": 1
+    }
+},
+{
+    "model": "resume.jobaccomplishment",
+    "pk": 11,
+    "fields": {
+        "description": "Implemented hardware and LabVIEW software for operating laser systems",
+        "job": 1,
+        "order": 2
+    }
+},
+{
+    "model": "resume.jobaccomplishment",
+    "pk": 12,
+    "fields": {
+        "description": "Consistently receive 10/10's in customer experience scores",
+        "job": 2,
+        "order": 5
+    }
+},
+{
+    "model": "resume.jobaccomplishment",
+    "pk": 13,
+    "fields": {
+        "description": "Joined client meetings to troubleshoot issues and learn about development of projects",
+        "job": 2,
+        "order": 4
+    }
+},
+{
+    "model": "resume.skillset",
+    "pk": 1,
+    "fields": {
+        "name": "Technical Skills"
+    }
+},
+{
+    "model": "resume.skillset",
+    "pk": 2,
+    "fields": {
+        "name": "Transferable Skills"
+    }
+},
+{
+    "model": "resume.skill",
+    "pk": 1,
+    "fields": {
+        "text": "Data analysis in MATLAB, Python (pandas, numpy, etc), R",
+        "order": 2,
+        "skillset": 1
+    }
+},
+{
+    "model": "resume.skill",
+    "pk": 2,
+    "fields": {
+        "text": "Professional experience using relational and NoSQL databases",
+        "order": 5,
+        "skillset": 1
+    }
+},
+{
+    "model": "resume.skill",
+    "pk": 3,
+    "fields": {
+        "text": "UI development in LabView, HTML/CSS/Javascript (jQuery, D3, amCharts), LabWindows, Python (Tkinter)",
+        "order": 3,
+        "skillset": 1
+    }
+},
+{
+    "model": "resume.skill",
+    "pk": 4,
+    "fields": {
+        "text": "Troubleshooted 400+ technical issues using the scientific method and problem solving theory",
+        "order": 2,
+        "skillset": 2
+    }
+},
+{
+    "model": "resume.skill",
+    "pk": 6,
+    "fields": {
+        "text": "Business Intelligence: diagnose complex data and modeling problems, analyze technical issues, recommend solutions",
+        "order": 4,
+        "skillset": 1
+    }
+},
+{
+    "model": "resume.skill",
+    "pk": 7,
+    "fields": {
+        "text": "Experience with version control software (Git, Perforce)",
+        "order": 6,
+        "skillset": 1
+    }
+},
+{
+    "model": "resume.skill",
+    "pk": 8,
+    "fields": {
+        "text": "Machine learning in Python (scikit-learn, gensim, nltk, etc): regression, clustering, ensemble methods, dimensionality reduction, time series analysis, web scraping, Natural Language Processing (topic analysis), anomaly detection, familiarity with recommendation systems, neural networks",
+        "order": 2,
+        "skillset": 1
+    }
+},
+{
+    "model": "resume.skill",
+    "pk": 10,
+    "fields": {
+        "text": "Professional experience with large-scale code bases. Desire to dive in, understand existing code",
+        "order": 1,
+        "skillset": 2
+    }
+},
+{
+    "model": "resume.skill",
+    "pk": 11,
+    "fields": {
+        "text": "Teamwork: launched and supported research projects allowing my teams to produce data quicker and publish first on 4 academic publication",
+        "order": 5,
+        "skillset": 2
+    }
+},
+{
+    "model": "resume.skill",
+    "pk": 13,
+    "fields": {
+        "text": "Management responsibilities and teaching: mentored a new hire and BSc and MSc students, who completed their projects on time and to a high standards. Two years teaching assistant in the MATLAB/LabVIEW course \u201cApplied Informatics for Medical Students\u201d given in Dutch",
+        "order": 8,
+        "skillset": 2
+    }
+},
+{
+    "model": "resume.programmingarea",
+    "pk": 1,
+    "fields": {
+        "name": "Back end",
+        "order": 1
+    }
+},
+{
+    "model": "resume.programmingarea",
+    "pk": 2,
+    "fields": {
+        "name": "Front-end",
+        "order": 3
+    }
+},
+{
+    "model": "resume.programmingarea",
+    "pk": 3,
+    "fields": {
+        "name": "Machine Learning/Other",
+        "order": 6
+    }
+},
+{
+    "model": "resume.programminglanguage",
+    "pk": 5,
+    "fields": {
+        "name": "Python",
+        "programmingarea": 1,
+        "level": 5,
+        "description": "Proficient",
+        "order": 1
+    }
+},
+{
+    "model": "resume.programminglanguage",
+    "pk": 6,
+    "fields": {
+        "name": "Javascript",
+        "programmingarea": 2,
+        "level": 3,
+        "description": "Intermediate",
+        "order": 3
+    }
+},
+{
+    "model": "resume.programminglanguage",
+    "pk": 7,
+    "fields": {
+        "name": "C",
+        "programmingarea": 1,
+        "level": 2,
+        "description": "Used in the past",
+        "order": 9
+    }
+},
+{
+    "model": "resume.programminglanguage",
+    "pk": 8,
+    "fields": {
+        "name": "Django",
+        "programmingarea": 1,
+        "level": 4,
+        "description": "Daily use",
+        "order": 4
+    }
+},
+{
+    "model": "resume.programminglanguage",
+    "pk": 9,
+    "fields": {
+        "name": "Cach\u00e9 ObjectScript",
+        "programmingarea": 1,
+        "level": 5,
+        "description": "Proficient",
+        "order": 2
+    }
+},
+{
+    "model": "resume.programminglanguage",
+    "pk": 10,
+    "fields": {
+        "name": "MDX",
+        "programmingarea": 3,
+        "level": 5,
+        "description": "",
+        "order": 3
+    }
+},
+{
+    "model": "resume.programminglanguage",
+    "pk": 11,
+    "fields": {
+        "name": "SQL",
+        "programmingarea": 1,
+        "level": 4,
+        "description": "",
+        "order": 6
+    }
+},
+{
+    "model": "resume.programminglanguage",
+    "pk": 12,
+    "fields": {
+        "name": "MATLAB",
+        "programmingarea": 1,
+        "level": 4,
+        "description": "Daily use until 2013",
+        "order": 3
+    }
+},
+{
+    "model": "resume.programminglanguage",
+    "pk": 13,
+    "fields": {
+        "name": "Java",
+        "programmingarea": 1,
+        "level": 3,
+        "description": "",
+        "order": 8
+    }
+},
+{
+    "model": "resume.programminglanguage",
+    "pk": 14,
+    "fields": {
+        "name": "LabWindows/CVI",
+        "programmingarea": 1,
+        "level": 3,
+        "description": "",
+        "order": 10
+    }
+},
+{
+    "model": "resume.programminglanguage",
+    "pk": 15,
+    "fields": {
+        "name": "ShellScript (Bash)",
+        "programmingarea": 1,
+        "level": 4,
+        "description": "",
+        "order": 5
+    }
+},
+{
+    "model": "resume.programminglanguage",
+    "pk": 16,
+    "fields": {
+        "name": "LabVIEW",
+        "programmingarea": 1,
+        "level": 4,
+        "description": "",
+        "order": 7
+    }
+},
+{
+    "model": "resume.programminglanguage",
+    "pk": 17,
+    "fields": {
+        "name": "LaTeX",
+        "programmingarea": 3,
+        "level": 3,
+        "description": "",
+        "order": 7
+    }
+},
+{
+    "model": "resume.programminglanguage",
+    "pk": 18,
+    "fields": {
+        "name": "HTML",
+        "programmingarea": 2,
+        "level": 4,
+        "description": "",
+        "order": 1
+    }
+},
+{
+    "model": "resume.programminglanguage",
+    "pk": 19,
+    "fields": {
+        "name": "CSS",
+        "programmingarea": 2,
+        "level": 3,
+        "description": "",
+        "order": 2
+    }
+},
+{
+    "model": "resume.programminglanguage",
+    "pk": 20,
+    "fields": {
+        "name": "Python libraries (scikit learn, pandas, numpy, matplotlib, nltk, etc)",
+        "programmingarea": 3,
+        "level": 3,
+        "description": "",
+        "order": 1
+    }
+},
+{
+    "model": "resume.programminglanguage",
+    "pk": 21,
+    "fields": {
+        "name": "Bootstrap",
+        "programmingarea": 2,
+        "level": 3,
+        "description": "",
+        "order": 4
+    }
+},
+{
+    "model": "resume.programminglanguage",
+    "pk": 22,
+    "fields": {
+        "name": "REST",
+        "programmingarea": 1,
+        "level": 3,
+        "description": "",
+        "order": 7
+    }
+},
+{
+    "model": "resume.programminglanguage",
+    "pk": 23,
+    "fields": {
+        "name": "D3",
+        "programmingarea": 2,
+        "level": 3,
+        "description": "",
+        "order": 4
+    }
+},
+{
+    "model": "resume.programminglanguage",
+    "pk": 24,
+    "fields": {
+        "name": "amCharts",
+        "programmingarea": 2,
+        "level": 3,
+        "description": "Refer to my DeepSee_TimeCharts project on GitHub",
+        "order": 5
+    }
+},
+{
+    "model": "resume.language",
+    "pk": 6,
+    "fields": {
+        "language": "Dutch",
+        "order": 2,
+        "level": 4
+    }
+},
+{
+    "model": "resume.language",
+    "pk": 7,
+    "fields": {
+        "language": "English",
+        "order": 1,
+        "level": 4
+    }
+},
+{
+    "model": "resume.language",
+    "pk": 8,
+    "fields": {
+        "language": "Spanish",
+        "order": 1,
+        "level": 3
+    }
+},
+{
+    "model": "resume.language",
+    "pk": 9,
+    "fields": {
+        "language": "French",
+        "order": 2,
+        "level": 3
+    }
+},
+{
+    "model": "resume.language",
+    "pk": 10,
+    "fields": {
+        "language": "Italian",
+        "order": 1,
+        "level": 5
+    }
+},
+{
+    "model": "resume.projecttype",
+    "pk": 1,
+    "fields": {
+        "name": "Projects",
+        "order": 1
+    }
+},
+{
+    "model": "resume.projecttype",
+    "pk": 2,
+    "fields": {
+        "name": "Ongoing Projects",
+        "order": 2
+    }
+},
+{
+    "model": "resume.project",
+    "pk": 1,
+    "fields": {
+        "name": "Djangoresume",
+        "description": "Django app generating an online resume",
+        "link": "https://github.com/aless80/Djangoresume",
+        "order": 3,
+        "picture": "resume/img/iGrow.png",
+        "projtype": 1
+    }
+},
+{
+    "model": "resume.project",
+    "pk": 5,
+    "fields": {
+        "name": "Machine Learning Notebooks",
+        "description": "ipython notebooks with Machine Learning projects",
+        "link": "https://aless80.github.io/#machine-learning",
+        "order": 1,
+        "picture": "",
+        "projtype": 1
+    }
+},
+{
+    "model": "resume.project",
+    "pk": 6,
+    "fields": {
+        "name": "iGrow",
+        "description": "app allowing users to plot a child\u2019s weight, length and BMI in comparison to\r\nreference data from the World Health Organization.",
+        "link": "http://edosil.net/igrow",
+        "order": 7,
+        "picture": "",
+        "projtype": 1
+    }
+},
+{
+    "model": "resume.project",
+    "pk": 7,
+    "fields": {
+        "name": "Tantrix",
+        "description": "implementation in Python of a puzzle game",
+        "link": "https://github.com/aless80/tantrix",
+        "order": 6,
+        "picture": "",
+        "projtype": 1
+    }
+},
+{
+    "model": "resume.project",
+    "pk": 9,
+    "fields": {
+        "name": "DeepSeeButtons",
+        "description": "Reporting routine for InterSystems' Business Intelligence product DeepSee",
+        "link": "https://github.com/aless80/DeepSeeButtons",
+        "order": 1,
+        "picture": "",
+        "projtype": 2
+    }
+},
+{
+    "model": "resume.project",
+    "pk": 10,
+    "fields": {
+        "name": "pypanda",
+        "description": "Translating to python a gene regulatory network reconstruction algorithm from Quackenbush Lab",
+        "link": "https://github.com/aless80/pypanda",
+        "order": 3,
+        "picture": "",
+        "projtype": 2
+    }
+},
+{
+    "model": "resume.project",
+    "pk": 11,
+    "fields": {
+        "name": "Projects at InterSystems",
+        "description": "Projects involving InterSystems' technology",
+        "link": "https://aless80.github.io/#intersystems",
+        "order": 5,
+        "picture": "",
+        "projtype": 2
+    }
+},
+{
+    "model": "resume.achievement",
+    "pk": 2,
+    "fields": {
+        "title": "MIT Professional Education Program",
+        "description": "Certificate on the \"Data Science: Data to Insights\" online course on Data Science and Machine Learning",
+        "order": 1,
+        "url": "https://mitxpro.mit.edu/certificates/8c1eea3404c447968295be53c177a82b"
+    }
+},
+{
+    "model": "resume.achievement",
+    "pk": 5,
+    "fields": {
+        "title": "Online courses",
+        "description": "Certificates on Coursera and Lynda about Machine Learning and programming. Check my LinkedIn profile",
+        "order": 6,
+        "url": "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+    }
+},
+{
+    "model": "resume.publication",
+    "pk": 1,
+    "fields": {
+        "title": "Excitation-induced polarization decay in the plant light-harvesting complex LHCII.",
+        "authors": "Marin A, van Stokkum IH, Novoderezhkin VI, van Grondelle R.",
+        "author_underlined": "Marin A",
+        "journal": "Journal of Photochemistry and Photobiology, A: Chemistry",
+        "year": 2012,
+        "order": 1,
+        "journalpages": "234:91-99",
+        "link": "https://www.sciencedirect.com/science/article/pii/S1010603012000172"
+    }
+},
+{
+    "model": "resume.publication",
+    "pk": 2,
+    "fields": {
+        "title": "Flow of excitation energy in the cryptophyte light-harvesting antenna phycocyanin 645.",
+        "authors": "Marin A, Doust AB, Scholes GD, Wilk KE, Curmi PMG, van Stokkum IHM, van Grondelle\r\nR.",
+        "author_underlined": "Marin A",
+        "journal": "Biophysical Journal",
+        "year": 2011,
+        "order": 1,
+        "journalpages": "101:1004-1013",
+        "link": "https://www.sciencedirect.com/science/article/pii/S0006349511008423"
+    }
+},
+{
+    "model": "resume.publication",
+    "pk": 3,
+    "fields": {
+        "title": "Intra- and inter-monomeric transfers in the light harvesting LHCII complex: the Redfield-Frster picture.",
+        "authors": "Novoderezhkin VI, Marin A, van Grondelle R.",
+        "author_underlined": "Marin A",
+        "journal": "Physical Chemistry Chemical Physics",
+        "year": 2011,
+        "order": 2,
+        "journalpages": "13(38):17093-103",
+        "link": "http://pubs.rsc.org/en/content/articlelanding/2011/cp/c1cp21079c#!divAbstract"
+    }
+},
+{
+    "model": "resume.publication",
+    "pk": 4,
+    "fields": {
+        "title": "Minor complexes at work: light-harvesting by Carotenoids in the Photosystem II antenna complexes CP24 and CP26",
+        "authors": "Marin A, Passarini F, van Stokkum IH, Croce R, van Grondelle R.",
+        "author_underlined": "Marin A",
+        "journal": "Biophysical Journal",
+        "year": 2011,
+        "order": 3,
+        "journalpages": "100(11):2829-2838",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/21641329"
+    }
+},
+{
+    "model": "resume.publication",
+    "pk": 5,
+    "fields": {
+        "title": "Molecular adaptation of photoprotection: Triplet states in light-harvesting proteins",
+        "authors": "Gall A, Berera R, Alexandre MTA, Pascal AA, Bordes L, Mendes-Pinto MM, Andrianambinintso\r\nS, Stoitchkova KV, Marin A, Valkunas L, Horton P, Kennis JTM, van Grondelle R, Ruban A,\r\nRobert B.",
+        "author_underlined": "Marin A",
+        "journal": "Biophysical Journal",
+        "year": 2011,
+        "order": 4,
+        "journalpages": "101(4):934-942",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/21843485"
+    }
+},
+{
+    "model": "resume.publication",
+    "pk": 6,
+    "fields": {
+        "title": "The energy transfer pathways in the CP24 and CP26 antenna complexes of higher plant Photosystem II. A comparative study.",
+        "authors": "Marin A, Passarini F, Croce R, van Grondelle R.",
+        "author_underlined": "Marin A",
+        "journal": "Biophysical Journal",
+        "year": 2010,
+        "order": 1,
+        "journalpages": "99:4056-4065",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/21156149"
+    }
+},
+{
+    "model": "resume.publication",
+    "pk": 7,
+    "fields": {
+        "title": "From cochlear kinematics to cochlear mechanics: matching model to experiments",
+        "authors": "Boutet de Monvel J, Marin A, Jacob S, Tomo I, von Tiedemann M, Fridberger A, Ulfendahl M,\r\nSteele CR.",
+        "author_underlined": "Marin A",
+        "journal": "Otol Jpn",
+        "year": 2007,
+        "order": 1,
+        "journalpages": "16(2):76-84",
+        "link": "https://www.jstage.jst.go.jp/article/otoljpn1991/17/2/17_2_76/_pdf"
+    }
+}
+]
