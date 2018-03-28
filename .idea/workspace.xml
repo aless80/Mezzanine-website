@@ -2,27 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="566de7d9-f69e-4839-903e-76dc8041eeda" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/15761251384_c75618f6cc_o.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/28803360130_c86eb92e28_o.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/32916744464_d53be111e3_o.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/InstallBI.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/P8210493.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/coffee-and-laptop-outside.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/moderna/static/img/slides/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/moderna/static/img/slides/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/moderna/static/img/slides/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/moderna/static/img/works/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/moderna/static/img/works/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/moderna/static/img/works/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/moderna/static/img/works/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/moderna/static/img/works/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/moderna/static/img/works/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/moderna/static/img/works/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/moderna/static/img/works/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/panda_topgenes.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tantrix_game_2players.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mezzanine/settings.py" afterPath="$PROJECT_DIR$/Mezzanine/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/moderna/templates/base.html" afterPath="$PROJECT_DIR$/moderna/templates/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/moderna/templates/index.html" afterPath="$PROJECT_DIR$/moderna/templates/index.html" />
     </list>
     <ignored path="Mezzanine.iws" />
@@ -47,8 +29,18 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/moderna/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-18.958334">
+              <caret line="202" column="50" selection-start-line="202" selection-start-column="50" selection-end-line="202" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flat/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-20.208334">
+              <caret line="173" column="53" selection-start-line="171" selection-start-column="1" selection-end-line="173" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -57,8 +49,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/moderna/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.12">
-              <caret line="329" column="128" selection-start-line="329" selection-start-column="128" selection-end-line="329" selection-end-column="128" />
+            <state vertical-scroll-proportion="-3.2">
+              <caret line="260" column="48" selection-start-line="260" selection-start-column="48" selection-end-line="260" selection-end-column="48" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
@@ -83,8 +75,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Mezzanine/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36290324">
-              <caret line="233" column="5" selection-start-line="233" selection-start-column="5" selection-end-line="233" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.3883495">
+              <caret line="234" column="5" selection-start-line="234" selection-start-column="5" selection-end-line="234" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -99,6 +91,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/moderna/templates/index.html" />
+        <option value="$PROJECT_DIR$/moderna/templates/base.html" />
         <option value="$PROJECT_DIR$/Mezzanine/settings.py" />
       </list>
     </option>
@@ -282,14 +275,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/moderna/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flat/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.125">
@@ -302,8 +287,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/moderna/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.12">
-          <caret line="329" column="128" selection-start-line="329" selection-start-column="128" selection-end-line="329" selection-end-column="128" />
+        <state vertical-scroll-proportion="-3.2">
+          <caret line="260" column="48" selection-start-line="260" selection-start-column="48" selection-end-line="260" selection-end-column="48" />
           <folding>
             <element signature="n#style#0;n#img#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
@@ -312,10 +297,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/flat/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.208334">
+          <caret line="173" column="53" selection-start-line="171" selection-start-column="1" selection-end-line="173" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/moderna/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.958334">
+          <caret line="202" column="50" selection-start-line="202" selection-start-column="50" selection-end-line="202" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Mezzanine/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36290324">
-          <caret line="233" column="5" selection-start-line="233" selection-start-column="5" selection-end-line="233" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.3883495">
+          <caret line="234" column="5" selection-start-line="234" selection-start-column="5" selection-end-line="234" selection-end-column="5" />
           <folding />
         </state>
       </provider>
