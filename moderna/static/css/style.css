@@ -640,11 +640,12 @@ form#commentform textarea {
 		 -o-transition: all 450ms ease-out 0s;
 		    transition: all 450ms ease-out 0s;
 		  
-	-webkit-transform: rotateY(180deg) scale(0.5,0.5);
+	/*-webkit-transform: rotateY(180deg) scale(0.5,0.5);
 	   -moz-transform: rotateY(180deg) scale(0.5,0.5);
 		-ms-transform: rotateY(180deg) scale(0.5,0.5);
 		 -o-transform: rotateY(180deg) scale(0.5,0.5);
 			transform: rotateY(180deg) scale(0.5,0.5);	
+			*/
 }
 
 .item-thumbs:hover .hover-wrap,
@@ -652,16 +653,17 @@ form#commentform textarea {
 	opacity: 1;
 	filter: alpha(opacity=100);
 	
-	-webkit-transform: rotateY(0deg) scale(1,1);
+/*	-webkit-transform: rotateY(0deg) scale(1,1);
 	   -moz-transform: rotateY(0deg) scale(1,1);
 		-ms-transform: rotateY(0deg) scale(1,1);
 		 -o-transform: rotateY(0deg) scale(1,1);
 		    transform: rotateY(0deg) scale(1,1);
+		    */
 }
 
 .item-thumbs .hover-wrap .overlay-img {
 	position: absolute;
-	width: 50%;
+	width: 100%;
 	height: 100%;
 	opacity: 0.80;
 	filter: alpha(opacity=80);

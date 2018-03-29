@@ -24,13 +24,24 @@
 {% block main %}
 
 	<style>
-
-	li {
+	<!--center images top-->
+	.container .flexslider li {
   		display: inline-block;
 	}
-
-	li img {
+	.container .flexslider li img {
   		margin:0 auto;
+	}
+	.container .flexslider .flex-caption {
+		height: auto;
+		width: auto;
+		max-height: 500px;
+		max-width: 1100px;
+	}
+	.portfolio .item-thumbs {
+		max-width: 290px;
+		max-height: 195px;
+    	width: auto;
+    	height: auto;
 	}
 	</style>
 
@@ -42,7 +53,7 @@
 				<div id="main-slider" class="flexslider">
 					<ul class="slides">
 					<li>
-						<img src="{% static 'img/slides/phd_smile.jpg' %}" alt="" style="height:auto;width:auto;max-height: 500px; max-width: 1100px;"/>
+						<img src="{% static 'img/slides/phd_smile.jpg' %}" alt=""/>
 						<div class="flex-caption">
 							<h3>Machine Learning</h3>
 							<p>Project in machine learning</p>
@@ -50,7 +61,7 @@
 						</div>
 					</li>
 					<li>
-						<img src="{% static 'img/slides/laptop_cup.jpg' %}" alt=""  style="height:auto;width:auto;max-height: 500px; max-width: 1100px;"/>
+						<img src="{% static 'img/slides/laptop_cup.jpg' %}" alt=""/>
 						<div class="flex-caption">
 							<h3>Blog</h3>
 							<p>Link to my blog</p>
@@ -58,7 +69,7 @@
 						</div>
 					</li>
 					<li>
-						<img src="{% static 'img/slides/ale_sunglasses.jpg' %}" alt="" style="height:auto;width:auto;max-height: 500px; max-width: 1100px;"/>
+						<img src="{% static 'img/slides/ale_sunglasses.jpg' %}" alt="" />
 						<div class="flex-caption">
 							<h3>Development in Python</h3>
 							<p>Django..</p>
@@ -178,56 +189,40 @@
 			<!-- Portfolio Projects -->
 			<div class="row">
 				<div class="col-lg-12">
-					<h4 class="heading">Recent Works</h4>
+					<h4 class="heading">Projects</h4>
 					<div class="row">
 						<section id="projects">
 						<ul class="portfolio" id="thumbs">
-							<!-- Item Project and Filter Name -->
 							<li data-type="web" data-id="id-0" class="col-lg-3 design">
-							<div class="item-thumbs">
-							<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-							<a href="{% static 'img/works/panda_topgenes.png' %}" title="Work 1" data-fancybox-group="gallery" class="hover-wrap fancybox">
-							<span class="overlay-img"></span>
-							<span class="overlay-img-thumb font-icon-plus"></span>
-							</a>
-							<!-- Thumb Image and Description -->
-							<img alt="panda_topgenes" src="{% static 'img/works/panda_topgenes.png' %}">
-							</div>
+								<div class="item-thumbs">
+								<a href="{% static 'img/works/panda_topgenes.png' %}" title="PyPanda" data-fancybox-group="gallery" class="hover-wrap fancybox">
+								<span class="overlay-img"></span>
+								<span class="overlay-img-thumb font-icon-plus"></span>
+								</a>
+								<img alt="panda_topgenes" src="{% static 'img/works/panda_topgenes.png' %}">
+								</div>
 							</li>
-							<!-- End Item Project -->
-							<!-- Item Project and Filter Name -->
 							<li data-type="icon" data-id="id-1" class="item-thumbs col-lg-3 design">
-							<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-							<a href="{% static 'img/works/InstallBI.png' %}" title="InstallBI" data-fancybox-group="gallery" class="hover-wrap fancybox">
-							<span class="overlay-img"></span>
-							<span class="overlay-img-thumb font-icon-plus"></span>
-							</a>
-							<!-- Thumb Image and Description -->
-							<img alt="InstallBI.png" src="{% static 'img/works/InstallBI.png' %}">
+								<a href="{% static 'img/works/InstallBI.png' %}" title="InstallBI" data-fancybox-group="gallery" class="hover-wrap fancybox">
+								<span class="overlay-img"></span>
+								<span class="overlay-img-thumb font-icon-plus"></span>
+								</a>
+								<img alt="InstallBI.png" src="{% static 'img/works/InstallBI.png' %}">
 							</li>
-							<!-- End Item Project -->
-							<!-- Item Project and Filter Name -->
 							<li data-type="illustrator" data-id="id-2" class="item-thumbs col-lg-3 photography">
-							<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-							<a href="{% static 'img/works/tantrix_game_2players.png' %}" title="Tantrix" data-fancybox-group="gallery" class="hover-wrap fancybox">
-							<span class="overlay-img"></span>
-							<span class="overlay-img-thumb font-icon-plus"></span>
-							</a>
-							<!-- Thumb Image and Description -->
-							<img alt="tantrix_game_2players" src="{% static 'img/works/tantrix_game_2players.png' %}">
+								<a href="{% static 'img/works/tantrix_game_2players.png' %}" title="Tantrix" data-fancybox-group="gallery" class="hover-wrap fancybox">
+								<span class="overlay-img"></span>
+								<span class="overlay-img-thumb font-icon-plus"></span>
+								</a>
+								<img alt="tantrix_game_2players" src="{% static 'img/works/tantrix_game_2players.png' %}">
 							</li>
-							<!-- End Item Project -->
-							<!-- Item Project and Filter Name -->
 							<li data-type="illustrator" data-id="id-2" class="item-thumbs col-lg-3 photography">
-							<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-							<a href="{% static 'img/works/tantrix_game_2players.png' %}" title="Tantrix" data-fancybox-group="gallery" class="hover-wrap fancybox">
-							<span class="overlay-img"></span>
-							<span class="overlay-img-thumb font-icon-plus"></span>
-							</a>
-							<!-- Thumb Image and Description -->
-							<img alt="tantrix_game_2players 2" src="{% static 'img/works/tantrix_game_2players.png' %}">
+								<a href="{% static 'img/works/Djangoresume.png' %}" title="Tantrix" data-fancybox-group="gallery" class="hover-wrap fancybox">
+								<span class="overlay-img"></span>
+								<span class="overlay-img-thumb font-icon-plus"></span>
+								</a>
+								<img alt="orig_from_moderna 1" src="{% static 'img/works/Djangoresume.png' %}">
 							</li>
-							<!-- End Item Project -->
 						</ul>
 						</section>
 					</div>
@@ -236,116 +231,5 @@
 
 		</div>
 	</section>
-
-
-<section id="recent-works">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <h3>Our Latest Project</h3>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                    <div class="btn-group">
-                        <a class="btn btn-info" href="#scroller" data-slide="prev"><i class="icon-angle-left"></i></a>
-                        <a class="btn btn-info" href="#scroller" data-slide="next"><i class="icon-angle-right"></i></a>
-                    </div>
-                    <p class="gap"></p>
-                </div>
-                <div class="col-md-9">
-                    <div id="scroller" class="carousel slide">
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <div class="row">
-                                    <div class="col-xs-4">
-                                        <div class="portfolio-item">
-                                            <div class="item-inner">
-                                                <img class="img-responsive" src="{% static 'img/works/tantrix_game_2players.png' %}" alt="">
-                                                <h5>
-                                                    Nova - Corporate site template
-                                                </h5>
-                                                <div class="overlay">
-                                                    <a class="preview btn btn-info" title="Malesuada fames ac turpis egestas" href="{% static  'img/works/tantrix_game_2players.png' %}" rel="prettyPhoto">
-														<i class="icon-eye-open"></i>
-													</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-4">
-                                        <div class="portfolio-item">
-                                            <div class="item-inner">
-                                                <img class="img-responsive" src="{% static 'img/works/tantrix_game_2players.png' %}" alt="">
-                                                <h5>
-                                                    Fornax - Apps site template
-                                                </h5>
-                                                <div class="overlay">
-                                                    <a class="preview btn btn-info" title="Malesuada fames ac turpis egestas" href="{% static  'img/works/tantrix_game_2players.png' %}" rel="prettyPhoto"><i class="icon-eye-open"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-4">
-                                        <div class="portfolio-item">
-                                            <div class="item-inner">
-                                                <img class="img-responsive" src="{% static 'img/works/tantrix_game_2players.png' %}" alt="">
-                                                <h5>
-                                                    Flat Theme - Business Theme
-                                                </h5>
-                                                <div class="overlay">
-                                                    <a class="preview btn btn-info" title="Malesuada fames ac turpis egestas" href="{% static  'img/works/tantrix_game_2players.png' %}" rel="prettyPhoto"><i class="icon-eye-open"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!--/.row-->
-                            </div><!--/.item-->
-                            <div class="item">
-                                <div class="row">
-                                    <div class="col-xs-4">
-                                        <div class="portfolio-item">
-                                            <div class="item-inner">
-                                                <img class="img-responsive" src="{% static 'img/works/tantrix_game_2players.png' %}" alt="">
-                                                <h5>
-                                                    Flat Theme - Business Theme
-                                                </h5>
-                                                <div class="overlay">
-                                                    <a class="preview btn btn-info" title="Malesuada fames ac turpis egestas" href="{% static  'img/works/tantrix_game_2players.png' %}" rel="prettyPhoto"><i class="icon-eye-open"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-4">
-                                        <div class="portfolio-item">
-                                            <div class="item-inner">
-                                                <img class="img-responsive" src="{% static 'img/works/tantrix_game_2players.png' %}" alt="">
-                                                <h5>
-                                                    Nova - Corporate site template
-                                                </h5>
-                                                <div class="overlay">
-                                                    <a class="preview btn btn-info" title="Malesuada fames ac turpis egestas" href="{% static  'img/works/tantrix_game_2players.png' %}" rel="prettyPhoto"><i class="icon-eye-open"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-4">
-                                        <div class="portfolio-item">
-                                            <div class="item-inner">
-                                                <img class="img-responsive" src="{% static 'img/works/tantrix_game_2players.png' %}" alt="">
-                                                <h5>
-                                                    Fornax - Apps site template
-                                                </h5>
-                                                <div class="overlay">
-                                                    <a class="preview btn btn-info" title="Malesuada fames ac turpis egestas" href="{% static  'img/works/tantrix_game_2players.png' %}" rel="prettyPhoto"><i class="icon-eye-open"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!--/.item-->
-                        </div>
-                    </div>
-                </div>
-            </div><!--/.row-->
-        </div>
-    </section><!--/#recent-works-->
 
 {% endblock %}
