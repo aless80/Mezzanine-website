@@ -37,11 +37,40 @@
 		max-height: 500px;
 		max-width: 1100px;
 	}
+
 	.portfolio .item-thumbs {
-		max-width: 290px;
-		max-height: 195px;
-    	width: auto;
-    	height: auto;
+		width: 250px;
+		height: 195px;
+	}
+	#content img { /*Have to override #content img in style.css*/
+		/*Auto resize*/
+		max-width:100%;
+    	max-height:100%;
+		/*The following width is needed because some imported style.css has width=100% stretching my tall image*/
+		width: auto;
+		height:auto;
+		position: absolute;
+		/*vertically align*/
+    	top: 0;
+    	bottom: 0;
+    	left: 0;
+    	right: 0;
+    	margin: auto;
+	}
+
+<!--
+	.row.match-my-cols {
+    overflow: hidden;
+}
+
+.row.match-my-cols [class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}-->
+
+	.colz {
+    	display: table-cell;
+    	padding: 16px;
 	}
 	</style>
 
@@ -110,51 +139,43 @@
 						<div class="col-lg-3">
 							<div class="box">
 								<div class="box-gray aligncenter">
-									<h4>Fully responsive</h4>
+									<h4>My resume</h4>
 									<div class="icon">
-									<i class="fa fa-desktop fa-3x"></i>
+									<i class="fa fa-briefcase fa-3x"></i>
 									</div>
-									<p class="">
-									 Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
-									</p>
-
+									<p class="">My resume</p>
 								</div>
 								<div class="box-bottom">
-									<a href="#">Learn more</a>
+									<a href="/resume/">Jump in</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3">
+
+							<div class="box">
+								<div class="box-gray aligncenter">
+									<h4>Blog</h4>
+									<div class="icon">
+									<i class="fa fa-comment fa-3x"></i>
+									</div>
+									<p>My blog</p>
+								</div>
+								<div class="box-bottom">
+									<a href="/blog/">Jump in</a>
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-3">
 							<div class="box">
 								<div class="box-gray aligncenter">
-									<h4>Modern Style</h4>
-									<div class="icon">
-									<i class="fa fa-pagelines fa-3x"></i>
-									</div>
-									<p>
-									 Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
-									</p>
-
-								</div>
-								<div class="box-bottom">
-									<a href="#">Learn more</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3">
-							<div class="box">
-								<div class="box-gray aligncenter">
-									<h4>Customizable</h4>
+									<h4>About</h4>
 									<div class="icon">
 									<i class="fa fa-edit fa-3x"></i>
 									</div>
-									<p>
-									 Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
-									</p>
-
+									<p>About</p>
 								</div>
 								<div class="box-bottom">
-									<a href="#">Learn more</a>
+									<a href="/about/">Jump in</a>
 								</div>
 							</div>
 						</div>
@@ -165,13 +186,10 @@
 									<div class="icon">
 									<i class="fa fa-code fa-3x"></i>
 									</div>
-									<p>
-									 Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
-									</p>
-
+									<p>Code on GitHub</p>
 								</div>
 								<div class="box-bottom">
-									<a href="#">Learn more</a>
+									<a href="https://github.com/aless80?tab=repositories">Jump in</a>
 								</div>
 							</div>
 						</div>
@@ -195,33 +213,39 @@
 						<ul class="portfolio" id="thumbs">
 							<li data-type="web" data-id="id-0" class="col-lg-3 design">
 								<div class="item-thumbs">
-								<a href="{% static 'img/works/panda_topgenes.png' %}" title="PyPanda" data-fancybox-group="gallery" class="hover-wrap fancybox">
-								<span class="overlay-img"></span>
-								<span class="overlay-img-thumb font-icon-plus"></span>
-								</a>
-								<img alt="panda_topgenes" src="{% static 'img/works/panda_topgenes.png' %}">
+									<img alt="panda_topgenes" src="{% static 'img/works/panda_topgenes.png' %}">
+										<a href="{% static 'img/works/panda_topgenes.png' %}" title="PyPanda" data-fancybox-group="gallery" class="hover-wrap fancybox">
+										<span class="overlay-img"></span>
+										<span class="overlay-img-thumb font-icon-plus"></span>
+									</a>
 								</div>
 							</li>
-							<li data-type="icon" data-id="id-1" class="item-thumbs col-lg-3 design">
-								<a href="{% static 'img/works/InstallBI.png' %}" title="InstallBI" data-fancybox-group="gallery" class="hover-wrap fancybox">
-								<span class="overlay-img"></span>
-								<span class="overlay-img-thumb font-icon-plus"></span>
-								</a>
-								<img alt="InstallBI.png" src="{% static 'img/works/InstallBI.png' %}">
+							<li data-type="icon" data-id="id-1" class="col-lg-3 design">
+								<div class="item-thumbs">
+									<img alt="InstallBI.png" src="{% static 'img/works/InstallBI.png' %}">
+										<a href="{% static 'img/works/InstallBI.png' %}" title="InstallBI" data-fancybox-group="gallery" class="hover-wrap fancybox">
+										<span class="overlay-img"></span>
+										<span class="overlay-img-thumb font-icon-plus"></span>
+									</a>
+								</div>
 							</li>
-							<li data-type="illustrator" data-id="id-2" class="item-thumbs col-lg-3 photography">
-								<a href="{% static 'img/works/tantrix_game_2players.png' %}" title="Tantrix" data-fancybox-group="gallery" class="hover-wrap fancybox">
-								<span class="overlay-img"></span>
-								<span class="overlay-img-thumb font-icon-plus"></span>
-								</a>
-								<img alt="tantrix_game_2players" src="{% static 'img/works/tantrix_game_2players.png' %}">
+							<li data-type="illustrator" data-id="id-2" class="col-lg-3 photography">
+								<div class="item-thumbs">
+									<img alt="tantrix_game_2players" src="{% static 'img/works/tantrix_game_2players.png' %}">
+									<a href="{% static 'img/works/tantrix_game_2players.png' %}" title="Tantrix" data-fancybox-group="gallery" class="hover-wrap fancybox">
+									<span class="overlay-img"></span>
+									<span class="overlay-img-thumb font-icon-plus"></span>
+									</a>
+								</div>
 							</li>
-							<li data-type="illustrator" data-id="id-2" class="item-thumbs col-lg-3 photography">
-								<a href="{% static 'img/works/Djangoresume.png' %}" title="Tantrix" data-fancybox-group="gallery" class="hover-wrap fancybox">
-								<span class="overlay-img"></span>
-								<span class="overlay-img-thumb font-icon-plus"></span>
-								</a>
-								<img alt="orig_from_moderna 1" src="{% static 'img/works/Djangoresume.png' %}">
+							<li data-type="illustrator" data-id="id-2" class="col-lg-3 photography">
+								<div class="item-thumbs">
+									<img alt="orig_from_moderna 1" src="{% static 'img/works/Djangoresume.png' %}">
+										<a href="{% static 'img/works/Djangoresume.png' %}" title="Tantrix" data-fancybox-group="gallery" class="hover-wrap fancybox">
+										<span class="overlay-img"></span>
+										<span class="overlay-img-thumb font-icon-plus"></span>
+									</a>
+								</div>
 							</li>
 						</ul>
 						</section>
