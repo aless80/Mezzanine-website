@@ -58,59 +58,105 @@
     	margin: auto;
 	}
 
-<!--
-	.row.match-my-cols {
-    overflow: hidden;
-}
 
-.row.match-my-cols [class*="col-"]{
-    margin-bottom: -99999px;
-    padding-bottom: 99999px;
-}-->
-
-	.colz {
-    	display: table-cell;
-    	padding: 16px;
-	}
+	.carousel-inner .item {
+    	height: 600px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center center;
+  	}
 	</style>
 
-<!-- start slider -->
+
+
+<div class="container">
+  <div id="main-slider2" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#main-slider2" data-slide-to="0" class="active"></li>
+      <li data-target="#main-slider2" data-slide-to="1"></li>
+      <li data-target="#main-slider2" data-slide-to="2"></li>
+    </ul>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active" style="background-image: url({% static 'img/slides/phd_smile.jpg' %});">
+		  <div class="flex-caption">
+			  <h3>Machine Learning</h3>
+			  <p>Project in machine learning</p>
+			  <a href="#" class="btn btn-theme">Learn More</a>
+		  </div>
+	  </div>
+      <div class="item" style="background-image: url({% static 'img/slides/laptop_cup.jpg' %})">
+		  <div class="flex-caption">
+			<h3>Blog</h3>
+			<p>Link to my blog</p>
+			<a href="/blog/" class="btn btn-theme">Blog</a>
+		</div>
+	  </div>
+      <div class="item" style="background-image: url({% static 'img/slides/ale_sunglasses.jpg' %})">
+		  <div class="flex-caption">
+			  <h3>Development in Python</h3>
+			  <p>Django..</p>
+			  <a href="#" class="btn btn-theme">Learn More</a>
+		  </div>
+	  </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#main-slider2" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#main-slider2" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!--
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-			<!-- Slider -->
 				<div id="main-slider" class="flexslider">
 					<ul class="slides">
-					<li>
-						<img src="{% static 'img/slides/phd_smile.jpg' %}" alt=""/>
-						<div class="flex-caption">
-							<h3>Machine Learning</h3>
-							<p>Project in machine learning</p>
-							<a href="#" class="btn btn-theme">Learn More</a>
-						</div>
-					</li>
-					<li>
-						<img src="{% static 'img/slides/laptop_cup.jpg' %}" alt=""/>
-						<div class="flex-caption">
-							<h3>Blog</h3>
-							<p>Link to my blog</p>
-							<a href="/blog/" class="btn btn-theme">Blog</a>
-						</div>
-					</li>
-					<li>
-						<img src="{% static 'img/slides/ale_sunglasses.jpg' %}" alt="" />
-						<div class="flex-caption">
-							<h3>Development in Python</h3>
-							<p>Django..</p>
-							<a href="#" class="btn btn-theme">Learn More</a>
-						</div>
-					</li>
+						<li>
+							<img src="{% static 'img/slides/phd_smile.jpg' %}" alt=""/>
+							<div class="flex-caption">
+								<h3>Machine Learning</h3>
+								<p>Project in machine learning</p>
+								<a href="#" class="btn btn-theme">Learn More</a>
+							</div>
+						</li>
+						<li>
+							<img src="{% static 'img/slides/laptop_cup.jpg' %}" alt=""/>
+							<div class="flex-caption">
+								<h3>Blog</h3>
+								<p>Link to my blog</p>
+								<a href="/blog/" class="btn btn-theme">Blog</a>
+							</div>
+						</li>
+						<li>
+							<img src="{% static 'img/slides/ale_sunglasses.jpg' %}" alt="" />
+							<div class="flex-caption">
+								<h3>Development in Python</h3>
+								<p>Django..</p>
+								<a href="#" class="btn btn-theme">Learn More</a>
+							</div>
+						</li>
 					</ul>
 				</div>
-			<!-- end slider -->
 			</div>
 		</div>
-	</div>	
+	</div>
+	-->
 
 	{% endblock %}
 	</div>
