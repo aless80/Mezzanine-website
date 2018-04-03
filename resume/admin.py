@@ -9,7 +9,7 @@ from .models import Achievement, Publication
 
 class PersonalInfoAdmin(admin.ModelAdmin):
     exclude = ()
-    list_display = ('first_name','last_name','title','locality','region',)
+    list_display = ('first_name','last_name','title','image','locality','region',)
 
 class OverviewAdmin(admin.ModelAdmin): #customize appearance
     list_display = ['text'] #otherwise it displays 'object'
@@ -100,9 +100,9 @@ class ProjectTypeAdmin(admin.ModelAdmin):
 
 class ProjectAdmin(admin.ModelAdmin):
     exclude = ()
-    list_display = ('get_projtype','name','order', 'description',)
+    list_display = ('get_projtype','name','order','image','description',)
     list_filter = ('projtype__name','name','order',)
-    search_fields = ('projtype__name','name','order', 'description', 'link',)
+    search_fields = ('projtype__name','name','order','image','description','link',)
     ordering = ['projtype__name','order']
     def get_projtype(self, obj):
         return obj.projtype.name

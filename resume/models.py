@@ -23,6 +23,7 @@ class PersonalInfo(models.Model):
     github = models.URLField(blank=True)
     site = models.URLField(blank=True)
     twittername = models.CharField(max_length=100, blank=True)
+    image = models.ImageField(upload_to='static/resume/img/',blank=True)
     class Meta:
         verbose_name_plural = "01. Personal Info"    
     def full_name(self):
@@ -219,7 +220,7 @@ class ProjectType(models.Model):
         verbose_name_plural = "11. ProjectTypes"
         ordering = ['order','id']
     def __unicode__(self):
-        return ' - '.join([self.name, self.id])
+        return ' - '.join([self.name, str(self.id)])
     def __str__(self):
         return self.name
 
@@ -228,7 +229,8 @@ class Project(models.Model):
     description = models.TextField(blank=True)
     link = models.URLField(blank=True)
     order = models.IntegerField(default=1)
-    picture = models.CharField(blank=True, max_length=150)
+    #file will be uploaded to MEDIA_ROOT/<upload_to>  '/resume/static/resume/'
+    image = models.ImageField(upload_to='static/resume/img/',blank=True)
     projtype = models.ForeignKey('ProjectType',on_delete=models.CASCADE,default=1)
     class Meta:
         verbose_name_plural = "12. Projects"
