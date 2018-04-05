@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="566de7d9-f69e-4839-903e-76dc8041eeda" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mezzanine/settings.py" afterPath="$PROJECT_DIR$/Mezzanine/settings.py" />
     </list>
     <ignored path="Mezzanine.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,9 +82,11 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Mezzanine/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.795082">
-              <caret line="360" column="7" selection-start-line="360" selection-start-column="0" selection-end-line="360" selection-end-column="7" />
-              <folding />
+            <state vertical-scroll-proportion="0.8160763">
+              <caret line="364" column="4" selection-start-line="364" selection-start-column="4" selection-end-line="364" selection-end-column="4" />
+              <folding>
+                <element signature="e#1#57#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,11 +102,11 @@
         <option value="$PROJECT_DIR$/moderna/templates/base.html" />
         <option value="$PROJECT_DIR$/flat/templates/base.html" />
         <option value="$PROJECT_DIR$/flat/templates/index.html" />
-        <option value="$PROJECT_DIR$/Mezzanine/settings.py" />
         <option value="$PROJECT_DIR$/resume/templates/resume/resume.html" />
         <option value="$PROJECT_DIR$/resume/models.py" />
         <option value="$PROJECT_DIR$/moderna/templates/index.html" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Mezzanine/settings.py" />
       </list>
     </option>
   </component>
@@ -550,7 +550,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="184" column="47" selection-start-line="184" selection-start-column="41" selection-end-line="184" selection-end-column="47" />
-          <folding />
+          <folding>
+            <element signature="e#1#57#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -586,7 +588,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="234" column="5" selection-start-line="234" selection-start-column="5" selection-end-line="234" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#1#57#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -622,7 +626,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="234" column="5" selection-start-line="234" selection-start-column="5" selection-end-line="234" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#1#57#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -701,9 +707,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Mezzanine/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.795082">
-          <caret line="360" column="7" selection-start-line="360" selection-start-column="0" selection-end-line="360" selection-end-column="7" />
-          <folding />
+        <state vertical-scroll-proportion="0.8160763">
+          <caret line="364" column="4" selection-start-line="364" selection-start-column="4" selection-end-line="364" selection-end-column="4" />
+          <folding>
+            <element signature="e#1#57#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
