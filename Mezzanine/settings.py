@@ -362,7 +362,7 @@ if os.environ.get('SECRET_KEY') is None:
     print('')
     import sys
     sys.exit("Please define an environment variable as follows:\nexport SECRET_KEY='some text'")
-    
+
 SECRET_KEY=os.environ.get('SECRET_KEY')
 
 STATICFILES_DIRS = [
