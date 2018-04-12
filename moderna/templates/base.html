@@ -143,7 +143,6 @@
             {% endblock %}
 
             {% block right_wrapper %}
-
             <div class="col-md-{% block right_col_size %}3{% endblock %} {% block right_class %}right{% endblock %}">
                 {% nevercache %}
                 {% include "includes/user_panel.html" %}
@@ -158,7 +157,8 @@
 
                 </aside>
             </div>
-        {% endblock %}
+            {% endblock %}
+
         </div>
     </div>
     </section>

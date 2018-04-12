@@ -220,18 +220,24 @@ class ProjectType(models.Model):
         verbose_name_plural = "11. ProjectTypes"
         ordering = ['order','id']
     def __unicode__(self):
-        return ' - '.join([self.name, str(self.id)])
+        return ' - '.join([self.name, self.id])
     def __str__(self):
         return self.name
 
 class Project(models.Model):
     name = models.CharField(max_length=255)
-    description = models.TextField(blank=True)
+    short_description = models.TextField(blank=True,help_text="Text shown in project list")
+    long_description = models.TextField(blank=True,help_text="Text shown in modals appearing when clicking on images")
     link = models.URLField(blank=True)
     order = models.IntegerField(default=1)
     #file will be uploaded to MEDIA_ROOT/<upload_to>  '/resume/static/resume/'
-    image = models.ImageField(upload_to='static/resume/img/',blank=True)
+    image = models.ImageField(upload_to='static/resume/img/',blank=True,
+                              help_text="Preferred width x height: 247x200")
     projtype = models.ForeignKey('ProjectType',on_delete=models.CASCADE,default=1)
+    def save(self, *args, **kwargs):
+        if not self.long_description:
+            self.long_description = self.short_description
+        super(Project, self).save(*args, **kwargs)
     class Meta:
         verbose_name_plural = "12. Projects"
         ordering = ['order','id']

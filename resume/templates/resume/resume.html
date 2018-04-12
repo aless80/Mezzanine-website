@@ -32,7 +32,7 @@
         <a class="nav-link js-scroll-trigger" href="#achievements"><div>Projects</div></a>
       </li>  
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="#courses"><div>Certificates</div><div>&amp; Courses</div></a>
+        <a class="nav-link js-scroll-trigger" href="#other"><div>Other</div></a>
       </li>
     </ul>
   </div>
@@ -168,12 +168,10 @@
     <div class="my-auto">
       <h2 class="mb-5">Education</h2>
       {% for edu in education %}
-      <!--<h3 class="mb-0">{{ edu.degree }}</h3>-->
       <div class="resume-item d-flex flex-column flex-md-row mb-5">
         <div class="resume-content mr-auto">
           <div class="subheading mb-3">
             <h3 class="mb-0">{{ edu.degree }}</h3>
-            <!--<p class="mb-0">{{ edu.degree }}</p>-->
           </div>
           <p>
             {% if edu.schoolurl %}
@@ -196,8 +194,6 @@
       {% endfor %}
     </div>
   </section>
-
-
 
   <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
     <div class="my-auto">
@@ -224,8 +220,6 @@
         {% endfor %}
       </ul>
       <br>
-
-
       {% for sks in skillset %}
       <div class="subheading mb-3">
         <h3 class="mb-0">{{sks.name}}</h3>          
@@ -242,11 +236,9 @@
       </ul>
       <br>
       {% endfor %}
-
       <div class="subheading mb-3">
         <h3 class="mb-0">Languages</h3>          
       </div>
-      
       <ul>
         {% for lan in language|dictsortreversed:"level" %}
         <li>
@@ -259,7 +251,6 @@
     </div>
   </section>
   
-
   <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="achievements">
     <div class="my-auto">
       <h2 class="mb-5">Projects</h2>  
@@ -275,116 +266,89 @@
             {% if proj.name %}
             <a href="{{ proj.link}}" target="_block">{{ proj.name }}</a>:
             {%endif%}
-            {{ proj.description|safe }} 
+            {{ proj.short_description|safe }}
           </li>
         </ul>
         {% endfor %}
       </ul>
       <br>
       {% endfor %}
+
+      <div class="container mx-0 px-0 my-3">
+        <!--From https://codepen.io/thepeted/pen/ojvjbL with modal https://www.w3schools.com/howto/howto_css_modal_images.asp-->
+        <div class="row">
+          {% for prtype in projtype %}
+          {% for proj in prtype.project_set.all %}
+          {% if proj.image %}
+          <div class="col-sm-4 col-md-3">
+            <div id="{{ proj.name }}" class="thumb" alt="{{ proj.name }}" title="{{ proj.long_description }}"
+                 onclick="openModal(this,event);" style="background-image: url({{ proj.image }});">
+
+              <span class="fa-stack fa-lg launcher" s>
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-external-link fa-stack-1x fa-inverse"></i>
+              </span>
+
+              <div class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content">
+                  <div class="caption"></div>
+                  <a href="{{ proj.link }}">Go to</a>
+                </div>
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="courses">
+
+  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="other">
     <div class="my-auto">
-    <div class="subheading mb-3">
-      <h3 class="mb-0">Certificates and Courses</h3>
-    </div>
-    <ul class="achievements">
-      {% for ach in achievement %}
-      <ul class="fa-ul mb-0">
-        <li>
-          <i class="fa-li fa fa-check"></i>
-          {% if ach.title %}
-          <a href="{{ ach.url}}" target="_block">{{ ach.title }}</a>:
-          {%endif%}
-          {{ ach.description|capfirst|safe }} 
-        </li>
-      </ul>
-      {% endfor %}
-    </ul>
-    <br>
-
-    {% if publication %}
-    <div class="subheading mb-3">
-      <h3 class="mb-0">Publications</h3>
-    </div>
-    <ul class="achievements">
-      {% for pub in publication %}
-      <ul class="fa-ul mb-0">
-        <li >
-          <i class="fa-li fa fa-check" style="display:block;"></i>
-          {{ pub.formatted_authors|safe }} {{ pub.title }} 
-            <span class="italic">{{ pub.journal }}</span>, {{ pub.year }},
-          {{ pub.journalpages }}.
-          <a target="_blank" href="{{ pub.link }}">Link</a>
-        </li>
-      </ul>
-      {% endfor %}
-    </ul>
-    {% endif %}
-  </div>
-</section>
-
-
-
-  <!-- I need this css! -->
-  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <br>
-  
-  <div class="container">
-    <h2>Carousel Example</h2>
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-
-
-      <div class="carousel-inner">
-
-        <div class="item active">
-          <img src="{% static 'resume/img/iGrow.png' %}" alt="iGrow" style="width:80%;">
-          <div class="carousel-caption">
-            <h3>Los Angeles</h3>
-            <p>LA is always so much fun!</p>
-          </div>
-        </div>
-
-        <div class="item">
-          <img src="{% static 'resume/img/DeepSeeButtons.gif' %}" alt="DeepSeeButtons" style="width:70%;">
-          <div class="carousel-caption">
-            <h3>Chicago</h3>
-            <p>Thank you, Chicago!</p>
-          </div>
-        </div>
-      
-        <div class="item">
-          <img src="{% static 'resume/img/profile.jpg' %}" alt="New York" style="width:60%;">
-          <div class="carousel-caption">
-            <h3>New York</h3>
-            <p>We love the Big Apple!</p>
-          </div>
-        </div>
-    
+      <div class="subheading mb-3">
+        <h3 class="mb-0">Other</h3>
       </div>
+      <ul class="achievements">
+        {% for ach in achievement %}
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            {% if ach.title %}
+            <a href="{{ ach.url}}" target="_block">{{ ach.title }}</a>:
+            {%endif%}
+            {{ ach.description|capfirst|safe }}
+          </li>
+        </ul>
+        {% endfor %}
+      </ul>
+      <br>
 
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-      </a>
+      {% if publication %}
+      <div class="subheading mb-3">
+        <h3 class="mb-0">Publications</h3>
+      </div>
+      <ul class="achievements">
+        {% for pub in publication %}
+        <ul class="fa-ul mb-0">
+          <li >
+            <i class="fa-li fa fa-check" style="display:block;"></i>
+            {{ pub.formatted_authors|safe }} {{ pub.title }}
+              <span class="italic">{{ pub.journal }}</span>, {{ pub.year }},
+            {{ pub.journalpages }}.
+            <a   target="_blank" href="{{ pub.link }}">Link</a>
+          </li>
+        </ul>
+        {% endfor %}
+      </ul>
+      {% endif %}
     </div>
-  </div>
--->
-</section>
+  </section>
+
+
 </div>
 {% endwith %}
 {% endblock %}

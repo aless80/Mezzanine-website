@@ -100,9 +100,9 @@ class ProjectTypeAdmin(admin.ModelAdmin):
 
 class ProjectAdmin(admin.ModelAdmin):
     exclude = ()
-    list_display = ('get_projtype','name','order','image','description',)
+    list_display = ('get_projtype','name','order','image','short_description','long_description')
     list_filter = ('projtype__name','name','order',)
-    search_fields = ('projtype__name','name','order','image','description','link',)
+    search_fields = ('projtype__name','name','order','image','short_description','long_description','link',)
     ordering = ['projtype__name','order']
     def get_projtype(self, obj):
         return obj.projtype.name
