@@ -233,7 +233,9 @@ INSTALLED_APPS = (
     "resume",
     "moderna",
     # "flat", #nice animation for projects
-    "nova",
+    #"nova",
+    "categories",
+    "categories.editor",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",

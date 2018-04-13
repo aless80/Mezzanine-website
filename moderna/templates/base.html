@@ -137,28 +137,32 @@
             {% endblock %}
             {% block main_wrapper %}
 
-            <div class="col-md-{% block main_col_size %}7{% endblock %} {% block main_class %}middle{% endblock %}">
+            <!--<div class="col-md-{% block main_col_size %}7{% endblock %} {% block main_class %}middle{% endblock %}">
+            -->
+            <div>
                 {% block main %}{% endblock %}
             </div>
             {% endblock %}
 
-            {% block right_wrapper %}
+            <!--
+             block right_wrapper %}
 
             <div class="col-md-{% block right_col_size %}3{% endblock %} {% block right_class %}right{% endblock %}">
-                {% nevercache %}
-                {% include "includes/user_panel.html" %}
-                {% endnevercache %}
+                 nevercache %}
+                 include "includes/user_panel.html" %}
+                 endnevercache %}
                 <aside class="right-sidebar">
 
-                {% block right_panel %}
-                {% ifinstalled mezzanine.twitter %}
-                {% include "twitter/tweets.html" %}
-                {% endifinstalled %}
-                {% endblock %}
+                 block right_panel %}
+                 ifinstalled mezzanine.twitter %}
+                 include "twitter/tweets.html" %}
+                 endifinstalled %}
+                 endblock %}
 
                 </aside>
             </div>
-        {% endblock %}
+            endblock %}
+            -->
         </div>
     </div>
     </section>
