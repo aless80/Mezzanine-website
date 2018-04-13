@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="566de7d9-f69e-4839-903e-76dc8041eeda" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mezzanine/settings.py" afterPath="$PROJECT_DIR$/Mezzanine/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/moderna/templates/base.html" afterPath="$PROJECT_DIR$/moderna/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resume/templates/resume/base.html" afterPath="$PROJECT_DIR$/resume/templates/resume/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resume/templates/resume/base_mezzanine.html" afterPath="$PROJECT_DIR$/resume/templates/resume/base_mezzanine.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resume/templates/resume/resume.html" afterPath="$PROJECT_DIR$/resume/templates/resume/resume.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resume/views.py" afterPath="$PROJECT_DIR$/resume/views.py" />
     </list>
     <ignored path="Mezzanine.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -471,7 +465,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
