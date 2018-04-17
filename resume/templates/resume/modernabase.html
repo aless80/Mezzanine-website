@@ -16,113 +16,107 @@
 {% endifinstalled %}
 
 {% compress css %}
-    <!-- this one puts
+<!-- this one puts
     ::before, ::after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+        ...
     }
-
-<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-
--->
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">   -->
 <style>
-header ::before, ::after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    /* stuff needed from css/bootstrap.min.css */
+    header ::before, ::after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        }
+        .breadcrumb > li + li::before {
+        padding: 0 5px 0 10px;
     }
     .breadcrumb > li + li::before {
-    padding: 0 5px 0 10px;
-}
-.breadcrumb > li + li::before {
-    content: "/\00a0";
-    padding: 0 5px;
-    color: #ccc;
-}
+        content: "/\00a0";
+        padding: 0 5px;
+        color: #ccc;
+    }
+
+    header .clearfix::before, .clearfix::after, .container::before, .container::after, .container-fluid::before, .container-fluid::after, .row::before, .row::after, .form-horizontal .form-group::before, .form-horizontal .form-group::after, .btn-toolbar::before, .btn-toolbar::after, .btn-group-vertical > .btn-group::before, .btn-group-vertical > .btn-group::after, .nav::before, .nav::after, .navbar::before, .navbar::after, .navbar-header::before, .navbar-header::after, .navbar-collapse::before, .navbar-collapse::after, .pager::before, .pager::after, .panel-body::before, .panel-body::after, .modal-footer::before, .modal-footer::after {
+        content: " ";
+        display: table;
+    }
+    header .clearfix::after, .container::after, .container-fluid::after, .row::after, .form-horizontal .form-group::after, .btn-toolbar::after, .btn-group-vertical > .btn-group::after, .nav::after, .navbar::after, .navbar-header::after, .navbar-collapse::after, .pager::after, .panel-body::after, .modal-footer::after {
+        clear: both;
+    }
 
 
-
-header .clearfix::before, .clearfix::after, .container::before, .container::after, .container-fluid::before, .container-fluid::after, .row::before, .row::after, .form-horizontal .form-group::before, .form-horizontal .form-group::after, .btn-toolbar::before, .btn-toolbar::after, .btn-group-vertical > .btn-group::before, .btn-group-vertical > .btn-group::after, .nav::before, .nav::after, .navbar::before, .navbar::after, .navbar-header::before, .navbar-header::after, .navbar-collapse::before, .navbar-collapse::after, .pager::before, .pager::after, .panel-body::before, .panel-body::after, .modal-footer::before, .modal-footer::after {
-    content: " ";
-    display: table;
-}
-header .clearfix::after, .container::after, .container-fluid::after, .row::after, .form-horizontal .form-group::after, .btn-toolbar::after, .btn-group-vertical > .btn-group::after, .nav::after, .navbar::after, .navbar-header::after, .navbar-collapse::after, .pager::after, .panel-body::after, .modal-footer::after {
-    clear: both;
-}
-
-
-<!-- making header same as normal rich text page -->
-header * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-header .collapse {
-    display: none;
-}
-header .navbar-collapse.collapse {
-    display: block !important;
-    height: auto !important;
-    padding-bottom: 0;
-    overflow: visible !important;
-}
-header .navbar-collapse {
-    max-height: 340px;
-    overflow-x: visible;
-    padding-right: 15px;
-    padding-left: 15px;
-    border-top: 1px solid transparent;
-    box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
-    -webkit-overflow-scrolling: touch;
-}
-header .navbar-collapse {
-    width: auto;
-    border-top: 0;
-        border-top-color: currentcolor;
-    box-shadow: none;
-}
-header .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
-    padding-left: 0;
-    padding-right: 0;
-}
-header .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
-    margin-right: -15px;
-    margin-left: -15px;
-}
-header .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
-    margin-right: 0;
-    margin-left: 0;
-}
-header .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: #e7e7e7;
-}
+    <!-- making header same as normal rich text page -->
+    header * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    header .collapse {
+        display: none;
+    }
+    header .navbar-collapse.collapse {
+        display: block !important;
+        height: auto !important;
+        padding-bottom: 0;
+        overflow: visible !important;
+    }
+    header .navbar-collapse {
+        max-height: 340px;
+        overflow-x: visible;
+        padding-right: 15px;
+        padding-left: 15px;
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+        -webkit-overflow-scrolling: touch;
+    }
+    header .navbar-collapse {
+        width: auto;
+        border-top: 0;
+            border-top-color: currentcolor;
+        box-shadow: none;
+    }
+    header .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    header .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    header .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    header .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        border-color: #e7e7e7;
+    }
 
 
 
 
-header .navbar-nav > li {
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
-.navbar-nav > li {
-    float: left;
-}
-header .navbar-nav > li {
-    float: left;
-}
-header .nav > li {
-    position: relative;
-    display: block;
-}
-header li {
-    line-height: 1.6em;
-}
-header * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
+    header .navbar-nav > li {
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    .navbar-nav > li {
+        float: left;
+    }
+    header .navbar-nav > li {
+        float: left;
+    }
+    header .nav > li {
+        position: relative;
+        display: block;
+    }
+    header li {
+        line-height: 1.6em;
+    }
+    header * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
 </style>
 
 
@@ -130,27 +124,27 @@ header * {
     <!--resume-->
  <link href="{% static 'resume/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 <style>
-header .navbar-nav {
-    /*display: -webkit-box;
-    display: -ms-flexbox;
-    */
-    /*display: flex; "";*/
-    display: "";
-    /*-webkit-box-orient: vertical;*/
-    -webkit-box-orient: horizontal;
+    /* overrides on resume/vendor/bootstrap/css/bootstrap.min.css */
+    header .navbar-nav {
+        /*display: -webkit-box;
+        display: -ms-flexbox;
+        */
+        /*display: flex; "";*/
+        display: "";
+        /*-webkit-box-orient: vertical;*/
+        -webkit-box-orient: horizontal;
 
-    -webkit-box-direction: normal;
-    /*-ms-flex-direction: column;*/
-    -ms-flex-direction: row;
-    /*flex-direction: column;*/
-    flex-direction: row;
+        -webkit-box-direction: normal;
+        /*-ms-flex-direction: column;*/
+        -ms-flex-direction: row;
+        /*flex-direction: column;*/
+        flex-direction: row;
 
-    /*padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-    */
-}
-
+        /*padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        */
+    }
 </style>
 
 <link rel="stylesheet" href="{% static 'css/fancybox/jquery.fancybox.css' %}">
@@ -159,11 +153,12 @@ header .navbar-nav {
 
 <link rel="stylesheet" href="{% static 'css/mezzanine.css' %}">
 
-    <!--
 
-<!-- some problems with background, font, etc -->
+
+<!-- This causes some problems with background, font, etc -->
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 <style>
+    /* overrides on css/style.css */
     body {
         font-size: 1rem;
         font-weight: 400;
@@ -171,33 +166,37 @@ header .navbar-nav {
         line-height: 165%;
     }
 
+    /* Implemented in moderna/static/css/style.css
     header .navbar-static-top {
         background-color: rgb(232, 243, 242);
     }
     #content {
         background-color: rgb(232, 243, 242);
     }
+    */
 </style>
-<!--overwrite.css sets marging left 25px, not good-->
+
+<!--overwrite.css inherited from somewhere sets margins left 25px, not good-->
 <style>
+    /* overrides on overwrite.css */
     ul, ol {
-    /*margin: 0 0 10px 25px;*/
-    margin: 0;
+        /*margin: 0 0 10px 25px;*/
+        margin: 0;
     }
 </style>
 
 
 <link rel="stylesheet" href="{% static 'skins/default.css' %}">
 <style>
-.nivo-caption, .caption {
-    /*border-bottom: #68A4C4 5px solid;
-    border-bottom-width: 5px;
-    border-bottom-style: solid;
-    border-bottom-color: rgb(104, 164, 196);
-    */
-    border-bottom: none;
-
-}
+    /* overrides on skins/default.css */
+    .nivo-caption, .caption {
+        /*border-bottom: #68A4C4 5px solid;
+        border-bottom-width: 5px;
+        border-bottom-style: solid;
+        border-bottom-color: rgb(104, 164, 196);
+        */
+        border-bottom: none;
+    }
 </style>
 
 <!-- Ale: font-awesome for the scroll and eye buttons on projects-->

@@ -21,6 +21,7 @@ body {
 	font-weight:300;
 	line-height:1.6em;
 	color:#656565;
+	background: rgb(232, 243, 242);
 }
 
 a:active {
@@ -127,6 +128,7 @@ header .navbar-collapse  ul.navbar-nav {
 
 header .navbar-default{
     background-color: #fff;
+    background-color: rgb(232, 243, 242);
 }
 
 header .nav li a:hover,
@@ -309,6 +311,7 @@ ul.nav li.dropdown a {
 #featured{
 	width: 100%;
 	background:#fcfcfc;
+	background: rgb(232, 243, 242);
 	position:relative;
 	margin:0;
 	padding:0;
@@ -339,6 +342,7 @@ ul.nav li.dropdown a {
 ==================================== */
 section.callaction {
 	background:#f9f9f9;
+	background: rgb(232, 243, 242);
 	padding:50px 0 0 0;
 }
 
@@ -350,7 +354,8 @@ section.callaction {
 
 #content {
 	position:relative;
-	background:#fff;
+	/*background:#fff;*/
+	background:rgb(232, 243, 242);
 	padding:50px 0 40px 0;
 }
 
@@ -466,6 +471,7 @@ section.callaction {
 #inner-headline ul.breadcrumb li {
 	font-size:13px;
 	color:#fff;
+	color:rgb(232, 243, 242);
 }
 
 #inner-headline ul.breadcrumb li i{
