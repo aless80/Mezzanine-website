@@ -1,0 +1,9 @@
+{
+  "vars": {},
+  "css": [
+    "grid.less",
+    "thumbnails.less"
+  ],
+  "js": [],
+  "customizerUrl": "<none>"
+}

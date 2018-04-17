@@ -3,7 +3,7 @@
     "model": "auth.user",
     "fields": {
         "password": "pbkdf2_sha256$100000$pe599X7B8YyS$+Ijv1/dyiZsU+1ucdxTpGWHFuGb/oJAA07RmWdfYeIY=",
-        "last_login": "2018-04-08T14:30:58.879Z",
+        "last_login": "2018-04-10T03:11:48.182Z",
         "is_superuser": true,
         "username": "admin",
         "first_name": "",
@@ -34,6 +34,14 @@
 },
 {
     "model": "sessions.session",
+    "pk": "5t2dl6vn5s6y9z5hhfed1wpki76podin",
+    "fields": {
+        "session_data": "YjZhZGQ3MmQ1MjU0YzQ4OGRkNmU3MjczYTQ4NjMxMTdjYWRmZWZlNzp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3NmQxYmY0ODM4NDIzMDA5OGExZDQ1ZjMzODcyZDEwOTFmYzQ1NzEyIn0=",
+        "expire_date": "2018-04-24T00:36:31.469Z"
+    }
+},
+{
+    "model": "sessions.session",
     "pk": "5vmylk30ftemkjy8allgwlntque4l3p2",
     "fields": {
         "session_data": "NTJkMDQwNzAxNzFiMzFlMzg3NzcwYTgxYTcwZjJiNTYwNjUwMWY4NTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIzODRiODY3MzAwMTYxMjNjYzE3OGFiZDBlOWNhYTMzZjJkNmM5N2IzIn0=",
@@ -46,6 +54,14 @@
     "fields": {
         "session_data": "NTU3MjIyYzgzYjRiNGY2Y2RiOTZmYWZhODk3YWIxNjNiZWY3OTc2Yzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2hhc2giOiIzODRiODY3MzAwMTYxMjNjYzE3OGFiZDBlOWNhYTMzZjJkNmM5N2IzIn0=",
         "expire_date": "2018-04-14T18:13:20.091Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "8q9bb4cr1a07tpi6kogzs6w95frur3zx",
+    "fields": {
+        "session_data": "YjI0ZTk1NWQzOWE5ZGEwM2UyOWUyMTc3MGQyYjBmMDY5ODI4ZjY2NDp7Il9hdXRoX3VzZXJfaGFzaCI6Ijc2ZDFiZjQ4Mzg0MjMwMDk4YTFkNDVmMzM4NzJkMTA5MWZjNDU3MTIiLCJfYXV0aF91c2VyX2lkIjoiMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
+        "expire_date": "2018-04-23T12:52:57.013Z"
     }
 },
 {
@@ -138,10 +154,10 @@
 },
 {
     "model": "sessions.session",
-    "pk": "vaxrztegy5u7zni39z2ee5x7t0f4fj3k",
+    "pk": "vhr0hi0mpev4rh7ftqew6cql9xzr8ia1",
     "fields": {
-        "session_data": "YmJlMTcyOThmYjM3MWM4ODY4YWZkN2QyYWJlMWNjOWM3MWQ0NGY2Yjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiYmQxYzdkZGM0OTA5MjA5NDhkNDhkMGM1ZTg1Nzk0NDE0NjU1NjdlZiIsIl9hdXRoX3VzZXJfaWQiOiIyIn0=",
-        "expire_date": "2018-04-22T14:30:58.974Z"
+        "session_data": "YjI0ZTk1NWQzOWE5ZGEwM2UyOWUyMTc3MGQyYjBmMDY5ODI4ZjY2NDp7Il9hdXRoX3VzZXJfaGFzaCI6Ijc2ZDFiZjQ4Mzg0MjMwMDk4YTFkNDVmMzM4NzJkMTA5MWZjNDU3MTIiLCJfYXV0aF91c2VyX2lkIjoiMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
+        "expire_date": "2018-04-24T03:11:48.303Z"
     }
 },
 {
@@ -800,7 +816,7 @@
         "long_description": "Django app generating an online resume",
         "link": "https://github.com/aless80/Djangoresume",
         "order": 3,
-        "image": "static/resume/img/Djangoresume.png",
+        "image": "static/resume/img/Djangoresume_VNU1TqX.png",
         "projtype": 1
     }
 },
@@ -839,7 +855,7 @@
         "long_description": "Implementation in Python of the Tantrix puzzle game. My first Python project. It uses TKinter for the UI",
         "link": "https://github.com/aless80/tantrix",
         "order": 6,
-        "image": "static/resume/img/tantrix_game_2players.png",
+        "image": "static/resume/img/tantrix.gif",
         "projtype": 1
     }
 },

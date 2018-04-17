@@ -47,7 +47,7 @@ def index(request):
         'publication' : publication,
     })
 
-'''
+
 class OverviewCreate(CreateView):
     model = Overview
     fields = '__all__'
@@ -95,7 +95,7 @@ class EducationDelete(DeleteView):
     model = Education
     template_name = 'resume/template_form.html'
     success_url = reverse_lazy('index')
-
+'''
 class Language(CreateView):
     model = Language
     fields = '__all__'

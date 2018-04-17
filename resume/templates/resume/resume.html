@@ -1,15 +1,17 @@
-<!--extends "resume/base_mezzanine.html" %}-->
-{% extends "resume/base_mezzanine.html" %}
+{% extends "resume/base.html" %}
 {% load static %}
+
 {% block sideNav %}
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
   <a class="navbar-brand js-scroll-trigger" href="#page-top">
     <span class="d-block d-lg-none">Resume</span>
+    {% with personal_info|first as pinfo %}
+      {% if pinfo.image %}
     <span class="d-none d-lg-block">
-      {% with personal_info|first as pinfo %}
       <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{ pinfo.image.url }}" alt="">
-      {% endwith %}
     </span>
+    {% endif %}
+    {% endwith %}
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -37,7 +39,7 @@
     </ul>
   </div>
 </nav>
-{% endblock sideNav %}
+{% endblock %}
 
 {% block content %}
 {% with personal_info|first as pinfo %}
@@ -66,7 +68,7 @@
       <ul class="list-inline list-social-icons mb-0">
         {% if pinfo.email %}
         <li class="list-inline-item">
-          <a href="{{pinfo.email}}" target="_blank" title="Send me an email">
+          <a href="mailto:{{pinfo.email}}" target="_blank" title="Send me an email">
             <span class="fa-stack fa-lg">
               <i class="fa fa-circle fa-stack-2x"></i>
               <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
@@ -282,7 +284,7 @@
           {% if proj.image %}
           <div class="col-sm-4 col-md-3">
             <div id="{{ proj.name }}" class="thumb" alt="{{ proj.name }}" title="{{ proj.long_description }}"
-                 onclick="openModal(this,event);" style="background-image: url({{ proj.image }});">
+                 onclick="openModal(this,event);" style="background-image: url({{ proj.image.url }});">
 
               <span class="fa-stack fa-lg launcher" s>
                 <i class="fa fa-circle fa-stack-2x"></i>

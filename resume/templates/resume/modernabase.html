@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="{{ LANGUAGE_CODE }}"{% if LANGUAGE_BIDI %} dir="rtl"{% endif %}>
+{% load pages_tags mezzanine_tags i18n staticfiles %}
+
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="{% block meta_keywords %}{% endblock %}">
+<meta name="description" content="{% block meta_description %}{% endblock %}">
+<title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}</title>
+<link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
+
+{% ifinstalled mezzanine.blog %}
+<link rel="alternate" type="application/rss+xml" title="RSS" href="{% url "blog_post_feed" "rss" %}">
+<link rel="alternate" type="application/atom+xml" title="Atom" href="{% url "blog_post_feed" "atom" %}">
+{% endifinstalled %}
+
+{% compress css %}
+    <!-- this one puts
+    ::before, ::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+-->
+<style>
+header ::before, ::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+    .breadcrumb > li + li::before {
+    padding: 0 5px 0 10px;
+}
+.breadcrumb > li + li::before {
+    content: "/\00a0";
+    padding: 0 5px;
+    color: #ccc;
+}
+
+
+
+header .clearfix::before, .clearfix::after, .container::before, .container::after, .container-fluid::before, .container-fluid::after, .row::before, .row::after, .form-horizontal .form-group::before, .form-horizontal .form-group::after, .btn-toolbar::before, .btn-toolbar::after, .btn-group-vertical > .btn-group::before, .btn-group-vertical > .btn-group::after, .nav::before, .nav::after, .navbar::before, .navbar::after, .navbar-header::before, .navbar-header::after, .navbar-collapse::before, .navbar-collapse::after, .pager::before, .pager::after, .panel-body::before, .panel-body::after, .modal-footer::before, .modal-footer::after {
+    content: " ";
+    display: table;
+}
+header .clearfix::after, .container::after, .container-fluid::after, .row::after, .form-horizontal .form-group::after, .btn-toolbar::after, .btn-group-vertical > .btn-group::after, .nav::after, .navbar::after, .navbar-header::after, .navbar-collapse::after, .pager::after, .panel-body::after, .modal-footer::after {
+    clear: both;
+}
+
+
+<!-- making header same as normal rich text page -->
+header * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+header .collapse {
+    display: none;
+}
+header .navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+}
+header .navbar-collapse {
+    max-height: 340px;
+    overflow-x: visible;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    -webkit-overflow-scrolling: touch;
+}
+header .navbar-collapse {
+    width: auto;
+    border-top: 0;
+        border-top-color: currentcolor;
+    box-shadow: none;
+}
+header .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+}
+header .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+header .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+}
+header .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+}
+
+
+
+
+header .navbar-nav > li {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.navbar-nav > li {
+    float: left;
+}
+header .navbar-nav > li {
+    float: left;
+}
+header .nav > li {
+    position: relative;
+    display: block;
+}
+header li {
+    line-height: 1.6em;
+}
+header * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+</style>
+
+
+
+    <!--resume-->
+ <link href="{% static 'resume/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+<style>
+header .navbar-nav {
+    /*display: -webkit-box;
+    display: -ms-flexbox;
+    */
+    /*display: flex; "";*/
+    display: "";
+    /*-webkit-box-orient: vertical;*/
+    -webkit-box-orient: horizontal;
+
+    -webkit-box-direction: normal;
+    /*-ms-flex-direction: column;*/
+    -ms-flex-direction: row;
+    /*flex-direction: column;*/
+    flex-direction: row;
+
+    /*padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    */
+}
+
+</style>
+
+<link rel="stylesheet" href="{% static 'css/fancybox/jquery.fancybox.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/mezzanine.css' %}">
+
+    <!--
+
+<!-- some problems with background, font, etc -->
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<style>
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.6em;
+        line-height: 165%;
+    }
+
+    header .navbar-static-top {
+        background-color: rgb(232, 243, 242);
+    }
+    #content {
+        background-color: rgb(232, 243, 242);
+    }
+</style>
+<!--overwrite.css sets marging left 25px, not good-->
+<style>
+    ul, ol {
+    /*margin: 0 0 10px 25px;*/
+    margin: 0;
+    }
+</style>
+
+
+<link rel="stylesheet" href="{% static 'skins/default.css' %}">
+<style>
+.nivo-caption, .caption {
+    /*border-bottom: #68A4C4 5px solid;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(104, 164, 196);
+    */
+    border-bottom: none;
+
+}
+</style>
+
+<!-- Ale: font-awesome for the scroll and eye buttons on projects-->
+<link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+
+
+
+
+{% if LANGUAGE_BIDI %}
+<link rel="stylesheet" href="{% static 'css/rtl.css' %}">
+{% endif %}
+{% ifinstalled cartridge.shop %}
+<link rel="stylesheet" href="{% static 'css/cartridge.css' %}">
+{% if LANGUAGE_BIDI %}
+<link rel="stylesheet" href="{% static 'css/cartridge.rtl.css' %}">
+{% endif %}
+{% endifinstalled %}
+{% block extra_css %}{% endblock %}
+{% endcompress %}
+
+{% compress js %}
+<script src="{% static 'mezzanine/js/'|add:settings.JQUERY_FILENAME %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/bootstrap-extras.js' %}"></script>
+{% block extra_js %}{% endblock %}
+{% include "includes/footer_scripts.html" %}
+{% endcompress %}
+
+<!--[if lt IE 9]>
+<script src="{% static "js/html5shiv.js" %}"></script>
+<script src="{% static "js/respond.min.js" %}"></script>
+<![endif]-->
+
+{% block extra_head %}{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Resume</title>
+    <!--  load compress
+     compress css -->
+    <!-- Bootstrap core CSS
+    <link href="{% static 'resume/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+-->
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900'" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i'" rel="stylesheet">
+    <link href="{% static 'resume/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'resume/vendor/devicons/css/devicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'resume/vendor/simple-line-icons/css/simple-line-icons.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'resume/css/resume.min.css' %}" rel="stylesheet">
+    <link href="{% static 'resume/css/resume-overrides.css' %}" rel="stylesheet">
+
+
+    <!--Modals project-->
+    <script>
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    function openModal(img,event) {
+      var modal = img.querySelector('.modal');
+      var modalImg = modal.querySelector(".modal-content")
+      var captionText = img.querySelector(".caption");
+      if ((event.target.className=="thumb") || (event.target.className.includes('fa-external-link'))) {
+        modal.style.display = "block";
+        modalImg.src = img.style.backgroundImage.split('\"')[1];
+        captionText.innerHTML = img.getAttribute('title');
+        modal.style.zIndex=1;
+      } else if ((event.target.className=="close")||(event.target.className=="modal")) {
+        modal.style.display = "none";
+        modal.style.zIndex="";
+      }
+    }
+    </script>
+    <!-- endcompress -->
+
+
+<style>
+    #sideNavAAAA {
+    position: absolute;
+    }
+
+    header .navbar-default .navbar-brand {
+        color: rgb(119, 119, 119);
+    }
+    header .navbar-toggle {
+        display: none;
+    }
+    header .navbar-header {
+        float: left;
+    }
+
+
+header .navbar > .container, .navbar > .container-fluid {
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    /*display: flex;*/
+    display: block;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+    /* Hide the page title*/
+    .callaction {
+    display: none;
+    }
+
+</style>
+
+
+        <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'resume/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'resume/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'resume/vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'resume/js/resume.min.js' %}"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body id="{% block body_id %}body{% endblock %}">
+    <div id="wrapper">
+        <header>
+            <div class="navbar navbar-default navbar-static-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      {% if settings.SITE_TITLE %}<a class="navbar-brand" href="/">{{ settings.SITE_TITLE }}</a>{% endif %}
+                    </div>
+                    <div class="navbar-collapse collapse">
+                       {% page_menu "pages/menus/dropdown.html" %}
+                    </div>
+                </div>
+            </div>
+        </header>
+        {% block all_content %}
+    <div class="container">
+    {% nevercache %}
+    {% if messages %}
+        <div class="messages">
+            {% for message in messages %}
+            <div class="alert alert-dismissable alert-{{ message.tags }}" data-alert="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                {{ message }}
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% endnevercache %}
+    </div>
+    {% block breadcrumb_wrapper %}
+    <section id="inner-headline">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="breadcrumb">
+                    {% spaceless %}
+                    {% block breadcrumb_menu %}{% page_menu "pages/menus/breadcrumb.html" %}{% endblock %}
+                    {% endspaceless %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}
+    {% block title_wrapper %}
+	<section class="callaction">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="big-cta">
+                        <div class="cta-text">
+                        <h2>{% block title %}{% endblock %}</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}
+    <section id="{% block section_id %}content{% endblock %}">
+        <div class="container">
+            <div class="row">
+            {% block left_wrapper %}
+                <div class="col-md-{% block left_col_size %}2{% endblock %} {% block left_class %}left{% endblock %}">
+                    {% block left_panel %}
+                    <div class="panel panel-default tree">{% page_menu "pages/menus/tree.html" %}</div>
+                    {% endblock %}
+                </div>
+            {% endblock %}
+            {% block main_wrapper %}
+
+            <!--<div class="col-md-{% block main_col_size %}7{% endblock %} {% block main_class %}middle{% endblock %}">
+            -->
+            <div>
+                {% block main %}{% endblock %}
+            </div>
+            {% endblock %}
+
+            <!--
+             block right_wrapper %}
+
+            <div class="col-md-{% block right_col_size %}3{% endblock %} {% block right_class %}right{% endblock %}">
+                 nevercache %}
+                 include "includes/user_panel.html" %}
+                 endnevercache %}
+                <aside class="right-sidebar">
+
+                 block right_panel %}
+                 ifinstalled mezzanine.twitter %}
+                 include "twitter/tweets.html" %}
+                 endifinstalled %}
+                 endblock %}
+
+                </aside>
+            </div>
+            endblock %}
+            -->
+        </div>
+    </div>
+    </section>
+{% endblock %}
+<footer>
+<div class="container">
+{% page_menu "pages/menus/footer.html" %}
+	<div id="sub-footer">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="copyright">
+					<p>
+						<span>Template by </span><a target="_blank" href="http://bootstraptaste.com">Bootstraptaste</a>. Mezzanine theme by <a target="_blank" href="http://thecodinghouse.in">CodingHouse</a>
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<ul class="social-network">
+					<li><a title="" data-placement="top" href="#" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
+					<li><a title="" data-placement="top" href="#" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
+					<li><a title="" data-placement="top" href="#" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+					<li><a title="" data-placement="top" href="#" data-original-title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+					<li><a title="" data-placement="top" href="#" data-original-title="Google plus"><i class="fa fa-google-plus"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</footer>
+</div>
+{% compress js %}
+
+<script src="{% static "js/jquery.easing.1.3.js"%}"></script>
+
+<script src="{% static "js/jquery.fancybox.pack.js"%}"></script>
+<script src="{% static "js/jquery.fancybox-media.js"%}"></script>
+<script src="{% static "js/google-code-prettify/prettify.js"%}"></script>
+<script src="{% static "js/portfolio/jquery.quicksand.js"%}"></script>
+<script src="{% static "js/portfolio/setting.js"%}"></script>
+<script src="{% static "js/jquery.flexslider.js"%}"></script>
+<script src="{% static "js/animate.js"%}"></script>
+<script src="{% static "js/custom.js"%}"></script>
+
+
+{% endcompress %}
+
+</body>
+</html>

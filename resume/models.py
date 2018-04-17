@@ -209,7 +209,7 @@ class Language(models.Model):
         verbose_name_plural = "10. Languages"
         ordering = ['level','order']
     def __unicode__(self):
-        return ' - '.join([self.language, self.level])
+        return ' - '.join([self.language, str(self.level)])
     def __str__(self):
         return self.language
 
@@ -220,7 +220,7 @@ class ProjectType(models.Model):
         verbose_name_plural = "11. ProjectTypes"
         ordering = ['order','id']
     def __unicode__(self):
-        return ' - '.join([self.name, self.id])
+        return ' - '.join([self.name, str(self.id)])
     def __str__(self):
         return self.name
 
@@ -242,7 +242,7 @@ class Project(models.Model):
         verbose_name_plural = "12. Projects"
         ordering = ['order','id']
     def __unicode__(self):
-        return ' - '.join([self.name, self.link, self.description[0:50]+'...'])
+        return ' - '.join([self.name, self.link, self.short_description[0:50]+'...'])
     def __str__(self):
         return self.name
 
@@ -259,7 +259,7 @@ class Achievement(models.Model):
         db_table = 'achievement'
         ordering = ['order', 'id']
     def __unicode__(self):
-        return ' - '.join([self.order, self.link, self.description[0:50]+'...'])
+        return ' - '.join([str(self.order), self.url, self.description[0:50]+'...'])
     def __str__(self):
         return self.title
 
@@ -279,6 +279,6 @@ class Publication(models.Model):
     def formatted_authors(self):
         return self.authors.replace(self.author_underlined,'<span class="strong-underlined">'+self.author_underlined+'</span>')
     def __unicode__(self):
-        return ' - '.join([self.id, self.year, self.order, self.journal[0:10]+'...'])
+        return ' - '.join([str(self.id), str(self.year), str(self.order), self.journal[0:10]+'...'])
     def __str__(self):
         return self.title[0:10]+'...'
