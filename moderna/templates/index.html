@@ -264,6 +264,31 @@
 					<h4 class="heading">Projects</h4>
 					<div class="row">
 						<section id="projects">
+
+
+							{% for prtype in projtype %}
+          					{% for proj in prtype.project_set.all %}
+          					{% if proj.image %}
+							<div class="col-sm-4 col-md-3">
+								<div id="{{ proj.name }}" class="thumb" alt="{{ proj.name }}" title="{{ proj.long_description }}"
+									 onclick="openModal(this,event);" style="background-image: url({{ proj.image.url }});">
+
+								  <span class="fa-stack fa-lg launcher" s>
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-external-link fa-stack-1x fa-inverse"></i>
+								  </span>
+
+								  <div class="modal">
+									  <span class="close">&times;</span>
+									  <img class="modal-content">
+									  <div class="caption"></div>
+									  <a href="{{ proj.link }}">Go to</a>
+									</div>
+								</div>
+							</div>
+							{% endif %}
+							{% endfor %}
+							{% endfor %}-->
 							<ul class="portfolio" id="thumbs">
 								<li data-type="web" data-id="id-0" class="col-lg-3 design">
 									<div class="item-thumbs">
