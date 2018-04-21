@@ -24,6 +24,7 @@ class PersonalInfo(models.Model):
     site = models.URLField(blank=True)
     twittername = models.CharField(max_length=100, blank=True)
     image = models.ImageField(upload_to='static/resume/img/',blank=True)
+    cv_pdf = models.FileField(upload_to='static/resume/img/', blank=True, help_text='Downloadable resume file')
     class Meta:
         verbose_name_plural = "01. Personal Info"    
     def full_name(self):
