@@ -3,7 +3,7 @@
     "model": "auth.user",
     "fields": {
         "password": "pbkdf2_sha256$100000$pe599X7B8YyS$+Ijv1/dyiZsU+1ucdxTpGWHFuGb/oJAA07RmWdfYeIY=",
-        "last_login": "2018-04-10T03:11:48.182Z",
+        "last_login": "2018-04-17T20:46:25.690Z",
         "is_superuser": true,
         "username": "admin",
         "first_name": "",
@@ -22,6 +22,14 @@
     "fields": {
         "session_data": "M2Q1MWI3YTkwMGEzY2YxZWNjNTU5YWRlOTAzYzRkYjJjODI5NTI1Mjp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIzODRiODY3MzAwMTYxMjNjYzE3OGFiZDBlOWNhYTMzZjJkNmM5N2IzIn0=",
         "expire_date": "2018-04-16T22:01:14.763Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "3ac79jf57nrlpzmvhzrnxv2nm4akt52r",
+    "fields": {
+        "session_data": "NzI1YmYzNGU0MWUyZDA4N2FmN2I2ZjhhNTIxZjkyZTI2MmY1Y2E1MTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2hhc2giOiI3NmQxYmY0ODM4NDIzMDA5OGExZDQ1ZjMzODcyZDEwOTFmYzQ1NzEyIn0=",
+        "expire_date": "2018-04-28T14:39:27.097Z"
     }
 },
 {
@@ -50,6 +58,14 @@
 },
 {
     "model": "sessions.session",
+    "pk": "6wem6a4v04vjgk7b6c8qw4mqvs7b29xi",
+    "fields": {
+        "session_data": "NjUxNzZjZjI3ZjFmYmZhOWY2NTcyOGE4MWExZTIwN2RmODAxOGI3Njp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9oYXNoIjoiNzZkMWJmNDgzODQyMzAwOThhMWQ0NWYzMzg3MmQxMDkxZmM0NTcxMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
+        "expire_date": "2018-04-30T15:40:38.750Z"
+    }
+},
+{
+    "model": "sessions.session",
     "pk": "7ky99cpsg8risvt8h0sooq8l6rvpgco5",
     "fields": {
         "session_data": "NTU3MjIyYzgzYjRiNGY2Y2RiOTZmYWZhODk3YWIxNjNiZWY3OTc2Yzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6IjIiLCJfYXV0aF91c2VyX2hhc2giOiIzODRiODY3MzAwMTYxMjNjYzE3OGFiZDBlOWNhYTMzZjJkNmM5N2IzIn0=",
@@ -70,6 +86,14 @@
     "fields": {
         "session_data": "NzQ3MGJiYWIxZDExMjU3M2EwZTc4YWRkNTZiZDU3MTYyM2QzYjQyMzp7Il9hdXRoX3VzZXJfaGFzaCI6Ijc2ZDFiZjQ4Mzg0MjMwMDk4YTFkNDVmMzM4NzJkMTA5MWZjNDU3MTIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIyIn0=",
         "expire_date": "2018-04-21T11:31:11.833Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "afia1a7q67c2k6yeawini7pp17rajvjv",
+    "fields": {
+        "session_data": "NjUxNzZjZjI3ZjFmYmZhOWY2NTcyOGE4MWExZTIwN2RmODAxOGI3Njp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9oYXNoIjoiNzZkMWJmNDgzODQyMzAwOThhMWQ0NWYzMzg3MmQxMDkxZmM0NTcxMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
+        "expire_date": "2018-04-24T22:00:57.013Z"
     }
 },
 {
@@ -122,6 +146,14 @@
 },
 {
     "model": "sessions.session",
+    "pk": "i4pld6i6qvvcvxr9b6k2qhnsr88nmla8",
+    "fields": {
+        "session_data": "NjUxNzZjZjI3ZjFmYmZhOWY2NTcyOGE4MWExZTIwN2RmODAxOGI3Njp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9oYXNoIjoiNzZkMWJmNDgzODQyMzAwOThhMWQ0NWYzMzg3MmQxMDkxZmM0NTcxMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
+        "expire_date": "2018-04-25T10:57:50.871Z"
+    }
+},
+{
+    "model": "sessions.session",
     "pk": "iirj7q4ul3vpkb5ilc274kky5g7kofpf",
     "fields": {
         "session_data": "ODM5MTExZGZiYmQ5OWE4MmI0MmVmNGYzN2JkMTc0Njg2YTc1ZDcxMzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6IjEiLCJfYXV0aF91c2VyX2hhc2giOiIzODRiODY3MzAwMTYxMjNjYzE3OGFiZDBlOWNhYTMzZjJkNmM5N2IzIn0=",
@@ -130,10 +162,26 @@
 },
 {
     "model": "sessions.session",
+    "pk": "ncxx4u1adba98q94xw60e064qpggvqxb",
+    "fields": {
+        "session_data": "NzQ3MGJiYWIxZDExMjU3M2EwZTc4YWRkNTZiZDU3MTYyM2QzYjQyMzp7Il9hdXRoX3VzZXJfaGFzaCI6Ijc2ZDFiZjQ4Mzg0MjMwMDk4YTFkNDVmMzM4NzJkMTA5MWZjNDU3MTIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIyIn0=",
+        "expire_date": "2018-05-01T01:41:47.853Z"
+    }
+},
+{
+    "model": "sessions.session",
     "pk": "ptb2u43xdhn5dpln74ouzv4im1q110gf",
     "fields": {
         "session_data": "MTFiZWU2OWE5Mzk2NDhiNjQxYTgzZjc0MDgwYmMxODg5MTY4YmI2Nzp7Il9hdXRoX3VzZXJfaGFzaCI6IjM4NGI4NjczMDAxNjEyM2NjMTc4YWJkMGU5Y2FhMzNmMmQ2Yzk3YjMiLCJfYXV0aF91c2VyX2lkIjoiMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
         "expire_date": "2018-04-14T14:26:01.597Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "rwb29lc5tgkrwkzr4ye2fth6px81tpa0",
+    "fields": {
+        "session_data": "YjI0ZTk1NWQzOWE5ZGEwM2UyOWUyMTc3MGQyYjBmMDY5ODI4ZjY2NDp7Il9hdXRoX3VzZXJfaGFzaCI6Ijc2ZDFiZjQ4Mzg0MjMwMDk4YTFkNDVmMzM4NzJkMTA5MWZjNDU3MTIiLCJfYXV0aF91c2VyX2lkIjoiMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
+        "expire_date": "2018-05-01T01:52:24.163Z"
     }
 },
 {
@@ -161,6 +209,14 @@
     }
 },
 {
+    "model": "sessions.session",
+    "pk": "wmkdqwu6zspla0pmzcsnp7hw35f05zdm",
+    "fields": {
+        "session_data": "YjZhZGQ3MmQ1MjU0YzQ4OGRkNmU3MjczYTQ4NjMxMTdjYWRmZWZlNzp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3NmQxYmY0ODM4NDIzMDA5OGExZDQ1ZjMzODcyZDEwOTFmYzQ1NzEyIn0=",
+        "expire_date": "2018-05-01T20:46:25.701Z"
+    }
+},
+{
     "model": "resume.personalinfo",
     "pk": 1,
     "fields": {
@@ -177,7 +233,8 @@
         "github": "https://github.com/aless80",
         "site": "https://aless80.pythonanywhere.com/",
         "twittername": "",
-        "image": "static/resume/img/profile.jpg"
+        "image": "static/resume/img/profile.jpg",
+        "cv_pdf": "static/resume/img/Alessandro_Marin_PhD_CV.pdf"
     }
 },
 {
@@ -339,7 +396,7 @@
     "model": "resume.jobaccomplishment",
     "pk": 7,
     "fields": {
-        "description": "Developed MATLAB software for data processing, performed model-based\r\nanalysis of spectroscopic data",
+        "description": "Developed MATLAB software for data processing, performed model-based\r\nanalysis of spectroscopic data on high performance servers",
         "job": 3,
         "order": 1
     }
@@ -375,7 +432,7 @@
     "model": "resume.jobaccomplishment",
     "pk": 11,
     "fields": {
-        "description": "Implemented hardware and LabVIEW software for operating laser systems",
+        "description": "Implemented software using queues and event-driven programming in LabVIEW for laser systems",
         "job": 1,
         "order": 2
     }
@@ -452,7 +509,7 @@
     "model": "resume.skill",
     "pk": 6,
     "fields": {
-        "text": "Business Intelligence: diagnose complex data and modeling problems, analyze technical issues, recommend solutions",
+        "text": "Business Intelligence: diagnose data, modeling, and other technical issues. Recommend solutions and optimizations for performance problems, efficient parallel processing of data, architectural flaws",
         "order": 4,
         "skillset": 1
     }
@@ -815,8 +872,8 @@
         "short_description": "Django app generating an online resume",
         "long_description": "Django app generating an online resume",
         "link": "https://github.com/aless80/Djangoresume",
-        "order": 3,
-        "image": "static/resume/img/Djangoresume_VNU1TqX.png",
+        "order": 4,
+        "image": "static/resume/img/Djangoresume.png",
         "projtype": 1
     }
 },
@@ -876,13 +933,13 @@
     "model": "resume.project",
     "pk": 10,
     "fields": {
-        "name": "pypanda",
+        "name": "PyPanda",
         "short_description": "Translating to python a gene regulatory network reconstruction algorithm",
         "long_description": "Translation to Python of a gene regulatory network reconstruction algorithm. The algorithm was published by the Quackenbush Lab at the Dana Farber cancer institute",
         "link": "https://github.com/aless80/pypanda",
         "order": 3,
         "image": "static/resume/img/panda_topgenes.png",
-        "projtype": 2
+        "projtype": 1
     }
 },
 {
@@ -903,12 +960,12 @@
     "pk": 12,
     "fields": {
         "name": "PyPuma",
-        "short_description": "Translation to Python of a gene regulatory network reconstruction algorithm",
-        "long_description": "Translation to Python of a gene regulatory network reconstruction algorithm. The algorithm was published by the Quackenbush Lab at the Dana Farber cancer institute",
+        "short_description": "Translated a computational biology method for modeling miRNA networks to Python",
+        "long_description": "Translated a computational biology method for modeling miRNA networks to Python. The algorithm was published by the Quackenbush Lab at the Dana Farber cancer institute",
         "link": "https://github.com/aless80/PyPuma",
         "order": 2,
         "image": "",
-        "projtype": 2
+        "projtype": 1
     }
 },
 {
@@ -929,7 +986,7 @@
     "pk": 2,
     "fields": {
         "title": "MIT Professional Education Program",
-        "description": "Certificate on the \"Data Science: Data to Insights\" online course on Data Science and Machine Learning",
+        "description": "Certificate for the \"Data Science: Data to Insights\" online course on Data Science and Machine Learning",
         "order": 1,
         "url": "https://mitxpro.mit.edu/certificates/8c1eea3404c447968295be53c177a82b"
     }
@@ -940,8 +997,18 @@
     "fields": {
         "title": "Online courses",
         "description": "Certificates on Coursera and Lynda about Machine Learning and programming. Check my LinkedIn profile",
-        "order": 6,
+        "order": 5,
         "url": "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+    }
+},
+{
+    "model": "resume.achievement",
+    "pk": 7,
+    "fields": {
+        "title": "Tech articles",
+        "description": "My articles on Developer Community, InterSystems' online community for developers",
+        "order": 6,
+        "url": "https://community.intersystems.com/user/14041/posts"
     }
 },
 {
