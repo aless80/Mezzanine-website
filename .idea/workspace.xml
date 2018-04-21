@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="566de7d9-f69e-4839-903e-76dc8041eeda" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resume/models.py" afterPath="$PROJECT_DIR$/resume/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resume/templates/resume/resume.html" afterPath="$PROJECT_DIR$/resume/templates/resume/resume.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resume/views.py" afterPath="$PROJECT_DIR$/resume/views.py" />
-    </list>
+    <list default="true" id="566de7d9-f69e-4839-903e-76dc8041eeda" name="Default" comment="" />
     <ignored path="Mezzanine.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
