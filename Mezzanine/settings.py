@@ -345,9 +345,9 @@ else:
 ##########
 # EMAIL # 
 ##########
-MAIL_HOST_USER = 'AlessandroMarin80@gmail.com'
-EMAIL_USE_TLS = True 
+EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
+MAIL_HOST_USER = 'alessandromarin80@gmail.com'
 EMAIL_HOST_PASSWORD = 'Set it up as environment variable'
 EMAIL_PORT = 587
 
@@ -373,6 +373,8 @@ if os.environ.get('SECRET_KEY') is None:
 
 if os.environ.get('EMAIL_HOST_PASSWORD') is None:
     print('EMAIL_HOST_PASSWORD not found as environment variable. You might want to set it')
+else:
+    EMAIL_HOST_PASSWORD=os.environ.get('EMAIL_HOST_PASSWORD')
 
 DATABASES['default']['PASSWORD'] = os.environ.get('PASSWORD')
 
