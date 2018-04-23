@@ -19,12 +19,12 @@ from django.utils.translation import ugettext_lazy as _
 
 # Controls the ordering and grouping of the admin menu.
 #
-# ADMIN_MENU_ORDER = (
-#     ("Content", ("pages.Page", "blog.BlogPost",
-#        "generic.ThreadedComment", (_("Media Library"), "media-library"),)),
-#     ("Site", ("sites.Site", "redirects.Redirect", "conf.Setting")),
-#     ("Users", ("auth.User", "auth.Group",)),
-# )
+ADMIN_MENU_ORDER = (
+     ("Content", ("pages.Page", "blog.BlogPost", "blog.BlogCategory", "generic.ThreadedComment",
+                    (_("Media Library"), "media-library"),)),
+     ("Site", ("sites.Site", "redirects.Redirect", "conf.Setting")),
+     ("Users", ("auth.User", "auth.Group",)),
+)
 
 # A three item sequence, each containing a sequence of template tags
 # used to render the admin dashboard.
@@ -79,7 +79,7 @@ from django.utils.translation import ugettext_lazy as _
 
 # Setting to turn on featured images for blog posts. Defaults to False.
 #
-# BLOG_USE_FEATURED_IMAGE = True
+BLOG_USE_FEATURED_IMAGE = True
 
 # If True, the django-modeltranslation will be added to the
 # INSTALLED_APPS setting.
@@ -149,7 +149,7 @@ DATABASES = {
         # Not used with sqlite3.
         "USER": "amarin",
         # Not used with sqlite3.
-        "PASSWORD": "Mezzanine",
+        "PASSWORD": "Set it up as environment variable",
         # Set to empty string for localhost. Not used with sqlite3.
         "HOST": "localhost",
         # Set to empty string for default. Not used with sqlite3.
@@ -348,7 +348,7 @@ else:
 MAIL_HOST_USER = 'AlessandroMarin80@gmail.com'
 EMAIL_USE_TLS = True 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_PASSWORD = 'ahahah'
+EMAIL_HOST_PASSWORD = 'Set it up as environment variable'
 EMAIL_PORT = 587
 
 #####################
@@ -360,10 +360,21 @@ EMAIL_PORT = 587
 #RICHTEXT_FILTER_LEVEL = 3
 #PAGEDOWN_SERVER_SIDE_PREVIEW = True
 
+
+if os.environ.get('PASSWORD') is None:
+    print('')
+    import sys
+    sys.exit("Define an environment variable as follows:\nexport PASSWORD='database password'")
+
 if os.environ.get('SECRET_KEY') is None:
     print('')
     import sys
-    sys.exit("Please define an environment variable as follows:\nexport SECRET_KEY='some text'")
+    sys.exit("Define an environment variable as follows:\nexport SECRET_KEY='Project password'")
+
+if os.environ.get('EMAIL_HOST_PASSWORD') is None:
+    print('EMAIL_HOST_PASSWORD not found as environment variable. You might want to set it')
+
+DATABASES['default']['PASSWORD'] = os.environ.get('PASSWORD')
 
 SECRET_KEY=os.environ.get('SECRET_KEY')
 
