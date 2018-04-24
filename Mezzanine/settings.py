@@ -366,22 +366,23 @@ if os.environ.get('PASSWORD') is None:
     import sys
     sys.exit("Define an environment variable as follows:\nexport PASSWORD='database password'")
 
+DATABASES['default']['PASSWORD'] = os.environ.get('PASSWORD')
+
 if os.environ.get('SECRET_KEY') is None:
     print('')
     import sys
     sys.exit("Define an environment variable as follows:\nexport SECRET_KEY='Project password'")
 
+SECRET_KEY=os.environ.get('SECRET_KEY')
+
 if os.environ.get('EMAIL_HOST_PASSWORD') is None:
     print('EMAIL_HOST_PASSWORD not found as environment variable. You might want to set it')
 else:
-    EMAIL_HOST_PASSWORD=os.environ.get('c')
+    EMAIL_HOST_PASSWORD=os.environ.get('EMAIL_HOST_PASSWORD')
 
 EMAIL_HOST_PASSWORD='Mieke8213!'
 
-DATABASES['default']['PASSWORD'] = os.environ.get('PASSWORD')
-
-SECRET_KEY=os.environ.get('SECRET_KEY')
-
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "/moderna"),
+    os.path.join(BASE_DIR, "moderna"),
 ]
+print("STATICFILES_DIRS="+STATICFILES_DIRS[0])
