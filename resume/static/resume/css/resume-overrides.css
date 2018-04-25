@@ -222,3 +222,7 @@ backdrop-filter: blur(5px);
       }
   }
 
+  .resume-section ul {
+    padding-left: 40px;
+    margin-left: 0;
+  }
