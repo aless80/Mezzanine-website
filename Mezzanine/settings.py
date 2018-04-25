@@ -385,4 +385,3 @@ EMAIL_HOST_PASSWORD='Mieke8213!'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "moderna"),
 ]
-print("STATICFILES_DIRS="+STATICFILES_DIRS[0])
