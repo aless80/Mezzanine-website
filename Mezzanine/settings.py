@@ -380,8 +380,6 @@ if os.environ.get('EMAIL_HOST_PASSWORD') is None:
 else:
     EMAIL_HOST_PASSWORD=os.environ.get('EMAIL_HOST_PASSWORD')
 
-EMAIL_HOST_PASSWORD='Mieke8213!'
-
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "moderna"),
 ]
