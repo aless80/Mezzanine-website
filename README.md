@@ -23,9 +23,10 @@ postgres=# CREATE USER myuser WITH PASSWORD 'password';
 postgres=# \q
 ```
 
-Before launching export an environment variable for SECRET_KEY:
+Before launching, export two environment variables for SECRET_KEY and PASSWORD:
 ```
 export SECRET_KEY='my secret key'
+export PASSWORD='database password'
 ```
 
 Test locally:
