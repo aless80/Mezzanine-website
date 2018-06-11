@@ -24,6 +24,8 @@ postgres=# ALTER USER admin WITH PASSWORD 'new_password'; #Change password if yo
 postgres=# \q
 ```
 
+or replace the content of Mezzanine/settings.py with Mezzanine/settings.py_sqlite to use SQLite. 
+
 There are some settings you might want to change in the Mezzanine/settings.py file. Two obvious ones are the default user in the DATABASES dictionary (I have amarin, it should match the one you set up in the previous steps for postgreSQL), and the email address (check the EMAIL_HOST_USER variable). 
 
 Before launching, export environment variables for SECRET_KEY, PASSWORD, and (optionally) EMAIL_HOST_PASSWORD: 
