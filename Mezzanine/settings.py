@@ -165,7 +165,7 @@ DATABASES = {
 # Full filesystem path to the project.
 PROJECT_APP_PATH = os.path.dirname(os.path.abspath(__file__))
 PROJECT_APP = os.path.basename(PROJECT_APP_PATH)
-PROJECT_ROOT = BASE_DIR = os.path.dirname(PROJECT_APP_PATH)
+PROJECT_ROOT = BASE_DIR = os.path.dirname(os.path.dirname(PROJECT_APP_PATH))
 
 # Every cache key will get prefixed with this value - here we set it to
 # the name of the directory the project is in to try and use something
