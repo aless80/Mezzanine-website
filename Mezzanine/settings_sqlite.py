@@ -382,3 +382,8 @@ else:
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "moderna"),
 ]
+
+TEMPLATE_DIRS = [
+    os.path.join(PROJECT_ROOT, "moderna/templates"),
+    os.path.join(PROJECT_ROOT, "templates"),
+    ]
