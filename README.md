@@ -1,6 +1,8 @@
 # Mezzanine
 My mezzanine-based site and blog
 
+![Alt Text](https://github.com/aless80/Mezzanine-website/blob/master/Mezzanine-website.png)
+
 Theme adapted from [thecodinghouse/mezzanine-themes](https://github.com/thecodinghouse/mezzanine-themes)
 
 ## Installation
