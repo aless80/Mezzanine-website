@@ -3,7 +3,7 @@
     "model": "auth.user",
     "fields": {
         "password": "pbkdf2_sha256$100000$pe599X7B8YyS$+Ijv1/dyiZsU+1ucdxTpGWHFuGb/oJAA07RmWdfYeIY=",
-        "last_login": "2018-04-17T20:46:25.690Z",
+        "last_login": "2018-06-12T22:42:04.960Z",
         "is_superuser": true,
         "username": "admin",
         "first_name": "",
@@ -22,6 +22,14 @@
     "fields": {
         "session_data": "M2Q1MWI3YTkwMGEzY2YxZWNjNTU5YWRlOTAzYzRkYjJjODI5NTI1Mjp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIzODRiODY3MzAwMTYxMjNjYzE3OGFiZDBlOWNhYTMzZjJkNmM5N2IzIn0=",
         "expire_date": "2018-04-16T22:01:14.763Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "0qs4cm692lsqdpl0jreufas7u40dsf7q",
+    "fields": {
+        "session_data": "ZDdmZjczYTE5NWViZDgyMmUxY2FlZjkzNWZmOTg5YTcxOTc1YmViZDp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9oYXNoIjoiMDJhZTVhMDVmODVhNGM5NGEzNjAxYmJiYmI3NjRlMWRlZGQyNTgyZSIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
+        "expire_date": "2018-06-25T22:39:41.234Z"
     }
 },
 {
@@ -98,6 +106,14 @@
 },
 {
     "model": "sessions.session",
+    "pk": "b4kmrjqxx320wx1cb5tys8go5gvm8tsv",
+    "fields": {
+        "session_data": "OTc5OWI1NGFkODdkYWVlZmQyYTdmZGNhZGQ5ZWZmZGJkYzU0NTQ1NTp7Il9hdXRoX3VzZXJfaGFzaCI6IjAyYWU1YTA1Zjg1YTRjOTRhMzYwMWJiYmJiNzY0ZTFkZWRkMjU4MmUiLCJfYXV0aF91c2VyX2lkIjoiMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
+        "expire_date": "2018-06-26T20:33:23.611Z"
+    }
+},
+{
+    "model": "sessions.session",
     "pk": "dtwgnd2u4mg8tt7blwuhcniu2tku9df9",
     "fields": {
         "session_data": "NjE1ODI2YzY2Y2RkMjUxOTIyZTY0MWZjMTAzNzBiODIzZDk0MjMxZjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiMzg0Yjg2NzMwMDE2MTIzY2MxNzhhYmQwZTljYWEzM2YyZDZjOTdiMyIsIl9hdXRoX3VzZXJfaWQiOiIyIn0=",
@@ -158,6 +174,14 @@
     "fields": {
         "session_data": "ODM5MTExZGZiYmQ5OWE4MmI0MmVmNGYzN2JkMTc0Njg2YTc1ZDcxMzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6IjEiLCJfYXV0aF91c2VyX2hhc2giOiIzODRiODY3MzAwMTYxMjNjYzE3OGFiZDBlOWNhYTMzZjJkNmM5N2IzIn0=",
         "expire_date": "2018-03-20T00:44:53.257Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "jiu5rp1cbyuriu82v1aaodzrya6bysag",
+    "fields": {
+        "session_data": "M2IwMzU0NzkyOGUzZjZlMTZlMWYzNGIwZjhjY2JmZDRhOTE4Nzg0MTp7Il9hdXRoX3VzZXJfaGFzaCI6IjAyYWU1YTA1Zjg1YTRjOTRhMzYwMWJiYmJiNzY0ZTFkZWRkMjU4MmUiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIyIn0=",
+        "expire_date": "2018-06-26T22:42:04.971Z"
     }
 },
 {
@@ -231,17 +255,17 @@
         "linkedin": "https://www.linkedin.com/in/alessandromarin80/",
         "facebook": "",
         "github": "https://github.com/aless80",
-        "site": "https://aless80.pythonanywhere.com/",
+        "site": "https://aless80.pythonanywhere.com/resume",
         "twittername": "",
         "image": "static/resume/img/profile.jpg",
-        "cv_pdf": "static/resume/img/Alessandro_Marin_PhD_CV.pdf"
+        "cv_pdf": "static/resume/img/Alessandro_Marin_PhD_CV_kdNYTYy.pdf"
     }
 },
 {
     "model": "resume.overview",
     "pk": 1,
     "fields": {
-        "text": "Support specialist with 7 years of doctoral and post-doctoral academic experience in solar energy research. \r\nExpertise in programming, data acquisition, data analysis, and modeling including statistical analysis, machine learning. Strong background in customer communication. \r\nI am interested in leveraging my skills for a role in Development."
+        "text": "Qualified by 4 years as Support Specialist and 7 years of doctoral and post-doctoral academic experience \r\n  in biophysics and solar energy research. Expertise in programming, data acquisition and data analysis, including machine learning and modeling. <br>\r\nI am interested in leveraging my skills for a role in development and data analysis."
     }
 },
 {
@@ -257,7 +281,7 @@
         "start_date": "1999-09-01",
         "end_date": "2005-11-30",
         "degree": "BSc in Physics, MSc in Applied Physics",
-        "description": "Studied Physics with minor in Applied Physics. Master thesis in Biophysics of the cochlea"
+        "description": "Bachelor and Master in Physics at University of Padova.  <br>\r\n  \r\n  Master thesis in Biophysics of the cochlea at Karolinska Institutet"
     }
 },
 {
@@ -289,7 +313,7 @@
         "start_date": "2005-04-01",
         "end_date": "2012-06-30",
         "degree": "PhD in Biophysics of Photosynthesis",
-        "description": "Full time research in biophysics of photosynthesis"
+        "description": "Full time research in biophysics of photosynthesis on the EU funded project Harvest"
     }
 },
 {
@@ -317,7 +341,7 @@
         "location": "Cambridge, MA",
         "title": "Support Specialist - Business Intelligence and Analytics",
         "description": "Provide technical support for InterSystems\u2019 Business Intelligence platform <a href=\"http://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=D2GS_ch_intro\" target=\"_block\">DeepSee<a>",
-        "start_date": "2014-04-01",
+        "start_date": "2014-05-01",
         "end_date": "2020-04-01",
         "is_current": true,
         "is_public": true,
@@ -332,7 +356,7 @@
         "companyurl": "https://www.nat.vu.nl/en/research/biophysics/index.aspx",
         "location": "Amsterdam,<br>the Netherlands",
         "title": "Ph.D. in Biophysics of Photosynthesis",
-        "description": "Reseached the transport of light energy in plant and algal photosynthesis",
+        "description": "Researched the transport of light energy in plant and algal photosynthesis",
         "start_date": "2006-04-01",
         "end_date": "2011-06-30",
         "is_current": false,
@@ -348,7 +372,7 @@
         "companyurl": "https://ki.se/en/neuro/ulfendahl-laboratory",
         "location": "Stockholm, Sweden",
         "title": "Master Thesis in Hearing Research",
-        "description": "Devised and developed a MATLAB algorithm able to couple models to microscopic\r\nmovies of the inner ear",
+        "description": "Researched cochlear mechanics",
         "start_date": "2004-08-01",
         "end_date": "2005-06-30",
         "is_current": false,
@@ -360,7 +384,7 @@
     "model": "resume.jobaccomplishment",
     "pk": 1,
     "fields": {
-        "description": "Solve customer issues and requests (400+ till date), coordinate with clients and development on any proposed changes",
+        "description": "Solve customer issues and requests (400+ till date), coordinate with clients and developers on any proposed changes",
         "job": 2,
         "order": 1
     }
@@ -369,7 +393,7 @@
     "model": "resume.jobaccomplishment",
     "pk": 3,
     "fields": {
-        "description": "Developed a nonlinear superposition model in MATLAB to extract charge\r\nyields from spectroscopic data",
+        "description": "Developed a nonlinear superposition model in MATLAB to extract charge yields from spectroscopic data",
         "job": 1,
         "order": 1
     }
@@ -423,7 +447,7 @@
     "model": "resume.jobaccomplishment",
     "pk": 10,
     "fields": {
-        "description": "Published a peer reviewed publication in an academic journal",
+        "description": "Preprocessed movies of the cochlea with wavelet denoising and deconvolution",
         "job": 4,
         "order": 1
     }
@@ -450,9 +474,27 @@
     "model": "resume.jobaccomplishment",
     "pk": 13,
     "fields": {
-        "description": "Joined client meetings to troubleshoot issues and learn about development of projects",
+        "description": "Join client meetings to troubleshoot issues and coordinate project development",
         "job": 2,
         "order": 4
+    }
+},
+{
+    "model": "resume.jobaccomplishment",
+    "pk": 15,
+    "fields": {
+        "description": "Invented and developed a MATLAB algorithm that uses optical flow to couple a simulation of cochlear movement \r\n  with microscopic movies",
+        "job": 4,
+        "order": 2
+    }
+},
+{
+    "model": "resume.jobaccomplishment",
+    "pk": 16,
+    "fields": {
+        "description": "Published a peer reviewed publication in an academic journal",
+        "job": 4,
+        "order": 3
     }
 },
 {
@@ -473,8 +515,8 @@
     "model": "resume.skill",
     "pk": 1,
     "fields": {
-        "text": "Data analysis in MATLAB, Python (pandas, numpy, etc), R",
-        "order": 2,
+        "text": "Data analysis using MATLAB, Python (pandas, numpy, etc), R",
+        "order": 3,
         "skillset": 1
     }
 },
@@ -482,8 +524,8 @@
     "model": "resume.skill",
     "pk": 2,
     "fields": {
-        "text": "Professional experience using relational and NoSQL databases",
-        "order": 5,
+        "text": "Databases: relational (SQL) and NoSQL databases",
+        "order": 6,
         "skillset": 1
     }
 },
@@ -491,8 +533,8 @@
     "model": "resume.skill",
     "pk": 3,
     "fields": {
-        "text": "UI development in LabView, HTML/CSS/Javascript (jQuery, D3, amCharts), LabWindows, Python (Tkinter)",
-        "order": 3,
+        "text": "UI and website development: HTML/CSS/Javascript (jQuery, D3, amCharts), Django, Python (Tkinter), LabView, LabWindows",
+        "order": 2,
         "skillset": 1
     }
 },
@@ -500,7 +542,7 @@
     "model": "resume.skill",
     "pk": 4,
     "fields": {
-        "text": "Troubleshooted 400+ technical issues using the scientific method and problem solving theory",
+        "text": "Troubleshooting technical issues using the scientific method and problem solving theory",
         "order": 2,
         "skillset": 2
     }
@@ -509,8 +551,8 @@
     "model": "resume.skill",
     "pk": 6,
     "fields": {
-        "text": "Business Intelligence: diagnose data, modeling, and other technical issues. Recommend solutions and optimizations for performance problems, efficient parallel processing of data, architectural flaws",
-        "order": 4,
+        "text": "Business Intelligence Analytics: diagnosing issues with data, BI models, architecture. Recommending optimizations for performance problems, efficient parallel processing of data",
+        "order": 5,
         "skillset": 1
     }
 },
@@ -518,8 +560,8 @@
     "model": "resume.skill",
     "pk": 7,
     "fields": {
-        "text": "Experience with version control software (Git, Perforce)",
-        "order": 6,
+        "text": "Version control software: Git, Perforce",
+        "order": 7,
         "skillset": 1
     }
 },
@@ -527,8 +569,8 @@
     "model": "resume.skill",
     "pk": 8,
     "fields": {
-        "text": "Machine learning in Python (scikit-learn, gensim, nltk, etc): regression, clustering, ensemble methods, dimensionality reduction, time series analysis, web scraping, Natural Language Processing (topic analysis), anomaly detection, familiarity with recommendation systems, neural networks",
-        "order": 2,
+        "text": "Machine learning in Python (scikit-learn, gensim, nltk, etc): regression, classification/clustering, ensemble methods, dimensionality reduction, time series analysis, web scraping, \r\n    natural language processing (topic analysis), anomaly detection, familiarity with recommendation systems, neural networks",
+        "order": 4,
         "skillset": 1
     }
 },
@@ -536,7 +578,7 @@
     "model": "resume.skill",
     "pk": 10,
     "fields": {
-        "text": "Professional experience with large-scale code bases. Desire to dive in, understand existing code",
+        "text": "Professional experience with large-scale code bases (InterSystems Cach\u00e9) with desire to dive in existing code",
         "order": 1,
         "skillset": 2
     }
@@ -545,8 +587,8 @@
     "model": "resume.skill",
     "pk": 11,
     "fields": {
-        "text": "Teamwork: launched and supported research projects allowing my teams to produce data quicker and publish first on 4 academic publication",
-        "order": 5,
+        "text": "Teamwork: launched and supported research projects resulting in 7 academic publications",
+        "order": 3,
         "skillset": 2
     }
 },
@@ -554,8 +596,35 @@
     "model": "resume.skill",
     "pk": 13,
     "fields": {
-        "text": "Management responsibilities and teaching: mentored a new hire and BSc and MSc students, who completed their projects on time and to a high standards. Two years teaching assistant in the MATLAB/LabVIEW course \u201cApplied Informatics for Medical Students\u201d given in Dutch",
-        "order": 8,
+        "text": "Management responsibilities and teaching: mentored a new hire and BSc and MSc students, who completed their projects on time and to a high standard. Two years teaching assistant in the MATLAB/LabVIEW course \u201cApplied Informatics for Medical Students\u201d given in Dutch",
+        "order": 4,
+        "skillset": 2
+    }
+},
+{
+    "model": "resume.skill",
+    "pk": 15,
+    "fields": {
+        "text": "Software development: Python, MATLAB, ObjectScript, Java, Javascript, LabVIEW, UNIX shell",
+        "order": 1,
+        "skillset": 1
+    }
+},
+{
+    "model": "resume.skill",
+    "pk": 16,
+    "fields": {
+        "text": "Scientific/Technical writing: published 4 first-authored academic publications, as well as 12 technical articles for the Developer Community of InterSystems",
+        "order": 5,
+        "skillset": 2
+    }
+},
+{
+    "model": "resume.skill",
+    "pk": 17,
+    "fields": {
+        "text": "Communication: presented 16 oral talks at international conferences",
+        "order": 7,
         "skillset": 2
     }
 },
@@ -869,8 +938,8 @@
     "pk": 1,
     "fields": {
         "name": "Djangoresume",
-        "short_description": "Django app generating an online resume",
-        "long_description": "Django app generating an online resume",
+        "short_description": "My Django-based online resume",
+        "long_description": "My Django-based online resume",
         "link": "https://github.com/aless80/Djangoresume",
         "order": 4,
         "image": "static/resume/img/Djangoresume.png",
@@ -921,7 +990,7 @@
     "pk": 9,
     "fields": {
         "name": "DeepSeeButtons",
-        "short_description": "Reporting routine for InterSystems' Business Intelligence product DeepSee",
+        "short_description": "Gather and analyze system information from InterSystems platforms",
         "long_description": "Reporting routine for InterSystems' Business Intelligence product DeepSee. This project will be added to the product. This project uses InterSystems' proprietary language Cach\u00e9 ObjectScript, as well as HTML/CSS/JavaScript",
         "link": "https://github.com/aless80/DeepSeeButtons",
         "order": 1,
@@ -934,10 +1003,10 @@
     "pk": 10,
     "fields": {
         "name": "PyPanda",
-        "short_description": "Translating to python a gene regulatory network reconstruction algorithm",
-        "long_description": "Translation to Python of a gene regulatory network reconstruction algorithm. The algorithm was published by the Quackenbush Lab at the Dana Farber cancer institute",
+        "short_description": "Optimized a method for modeling transcriptional networks in Python",
+        "long_description": "Optimized a method for modeling transcriptional networks in Python. The algorithm was published by the Quackenbush Lab at the Dana Farber cancer institute",
         "link": "https://github.com/aless80/pypanda",
-        "order": 3,
+        "order": 2,
         "image": "static/resume/img/panda_topgenes.png",
         "projtype": 1
     }
@@ -946,11 +1015,11 @@
     "model": "resume.project",
     "pk": 11,
     "fields": {
-        "name": "Projects at InterSystems",
-        "short_description": "Projects involving InterSystems' technology",
-        "long_description": "Projects involving InterSystems' technology, in particular InterSystems' Business Intelligence product DeepSee",
+        "name": "InterSystems",
+        "short_description": "Miscellaneous projects involving InterSystems' technology",
+        "long_description": "Miscellaneous projects involving InterSystems' technology, in particular InterSystems' Business Intelligence product DeepSee",
         "link": "https://aless80.github.io/#intersystems",
-        "order": 5,
+        "order": 6,
         "image": "",
         "projtype": 2
     }
@@ -960,10 +1029,10 @@
     "pk": 12,
     "fields": {
         "name": "PyPuma",
-        "short_description": "Translated a computational biology method for modeling miRNA networks to Python",
-        "long_description": "Translated a computational biology method for modeling miRNA networks to Python. The algorithm was published by the Quackenbush Lab at the Dana Farber cancer institute",
+        "short_description": "Wrote a Python application of a computational biology method for miRNA network inference",
+        "long_description": "Wrote a Python application of a computational biology method for miRNA network inference. The algorithm was published by the Quackenbush Lab at the Dana Farber cancer institute",
         "link": "https://github.com/aless80/PyPuma",
-        "order": 2,
+        "order": 3,
         "image": "",
         "projtype": 1
     }
@@ -976,9 +1045,22 @@
         "short_description": "Automatically install SAMPLES in IRIS Data Platform",
         "long_description": "Automatically install SAMPLES in IRIS Data Platform. This project uses InterSystems' proprietary language Cach\u00e9 ObjectScript.",
         "link": "https://github.com/aless80/Install-Samples-BI",
-        "order": 3,
+        "order": 5,
         "image": "static/resume/img/Install-Samples-BI.png",
         "projtype": 1
+    }
+},
+{
+    "model": "resume.project",
+    "pk": 14,
+    "fields": {
+        "name": "Mezzanine-website",
+        "short_description": "My Django/Mezzanine-based site",
+        "long_description": "My Django/Mezzanine-based site (online resume, blog)",
+        "link": "https://github.com/aless80/Mezzanine-website",
+        "order": 2,
+        "image": "static/resume/img/Mezzanine-website.png",
+        "projtype": 2
     }
 },
 {
@@ -996,7 +1078,7 @@
     "pk": 5,
     "fields": {
         "title": "Online courses",
-        "description": "Certificates on Coursera and Lynda about Machine Learning and programming. Check my LinkedIn profile",
+        "description": "Certificates (Coursera, Lynda) on programming, machine learning, and network science",
         "order": 5,
         "url": "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
     }
