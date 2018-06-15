@@ -380,9 +380,9 @@ else:
     EMAIL_HOST_PASSWORD=os.environ.get('EMAIL_HOST_PASSWORD')
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "moderna"),
+    os.path.join(PROJECT_ROOT, "moderna"),
+    os.path.join(PROJECT_ROOT, "resume"),
 ]
-
 
 
 
@@ -392,3 +392,12 @@ print("MEDIA_ROOT: "+str(MEDIA_ROOT))       #~/static/media
 print("MEDIA_URL: "+str(MEDIA_URL))         #/static/media/
 print("STATICFILES_DIRS: "+str(STATICFILES_DIRS))   #~/moderna
 print("")
+
+#I got these
+#./resume/static/resume/img/panda_topgenes.png
+#./moderna/static/img/works/panda_topgenes.png
+#but it fails:
+#http://127.0.0.1:8000/static/img/works/panda_topgenes.png/ 
+#index.html has:
+#src="{% static 'img/works/panda_topgenes.png' %}"/>
+#
