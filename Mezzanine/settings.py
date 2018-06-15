@@ -119,7 +119,6 @@ LANGUAGES = (
 # are displayed for error pages. Should always be set to ``False`` in
 # production. Best set to ``True`` in local_settings.py
 DEBUG = True
-DEBUG = False
 
 # Whether a user's session cookie expires when the Web browser is closed.
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
@@ -166,8 +165,14 @@ DATABASES = {
 # Full filesystem path to the project.
 PROJECT_APP_PATH = os.path.dirname(os.path.abspath(__file__))
 PROJECT_APP = os.path.basename(PROJECT_APP_PATH)
-PROJECT_ROOT = BASE_DIR = os.path.dirname(os.path.dirname(PROJECT_APP_PATH))
+PROJECT_ROOT = os.path.dirname(os.path.dirname(PROJECT_APP_PATH))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+print("PROJECT_APP_PATH: "+str(PROJECT_APP_PATH))
+print("PROJECT_APP: "+str(PROJECT_APP))
+print("PROJECT_ROOT: "+str(PROJECT_ROOT))
+print("BASE_DIR: "+str(BASE_DIR))
+print
 # Every cache key will get prefixed with this value - here we set it to
 # the name of the directory the project is in to try and use something
 # project specific.
@@ -181,7 +186,7 @@ STATIC_URL = "/static/"
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
-STATIC_ROOT = os.path.join(PROJECT_ROOT, STATIC_URL.strip("/"))
+STATIC_ROOT = os.path.join(BASE_DIR, STATIC_URL.strip("/"))
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
@@ -190,7 +195,7 @@ MEDIA_URL = STATIC_URL + "media/"
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
-MEDIA_ROOT = os.path.join(PROJECT_ROOT, *MEDIA_URL.strip("/").split("/"))
+MEDIA_ROOT = os.path.join(BASE_DIR, *MEDIA_URL.strip("/").split("/"))
 
 # Package/module name to import the root urlpatterns from for the project.
 ROOT_URLCONF = "%s.urls" % PROJECT_APP
@@ -380,15 +385,15 @@ else:
     EMAIL_HOST_PASSWORD=os.environ.get('EMAIL_HOST_PASSWORD')
 
 STATICFILES_DIRS = [
-    os.path.join(PROJECT_ROOT, "moderna"),
-    os.path.join(PROJECT_ROOT, "resume"),
+    os.path.join(BASE_DIR, "moderna"),
+    os.path.join(BASE_DIR, "resume"),
 ]
 
 
 
-print("STATIC_ROOT: "+str(STATIC_ROOT))     #~/static
+print("STATIC_ROOT: "+str(STATIC_ROOT))     #~/Mezzanine-website/static
 print("STATIC_URL: "+str(STATIC_URL))       #/static/
-print("MEDIA_ROOT: "+str(MEDIA_ROOT))       #~/static/media
+print("MEDIA_ROOT: "+str(MEDIA_ROOT))       #~/Mezzanine-website/static/media
 print("MEDIA_URL: "+str(MEDIA_URL))         #/static/media/
 print("STATICFILES_DIRS: "+str(STATICFILES_DIRS))   #~/moderna
 print("")
@@ -396,8 +401,9 @@ print("")
 #I got these
 #./resume/static/resume/img/panda_topgenes.png
 #./moderna/static/img/works/panda_topgenes.png
-#but it fails:
+#but it fails/works with DEBUG=False/True :
 #http://127.0.0.1:8000/static/img/works/panda_topgenes.png/ 
+
 #index.html has:
 #src="{% static 'img/works/panda_topgenes.png' %}"/>
 #
