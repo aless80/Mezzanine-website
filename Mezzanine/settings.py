@@ -119,6 +119,7 @@ LANGUAGES = (
 # are displayed for error pages. Should always be set to ``False`` in
 # production. Best set to ``True`` in local_settings.py
 DEBUG = True
+DEBUG = False
 
 # Whether a user's session cookie expires when the Web browser is closed.
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
@@ -381,3 +382,13 @@ else:
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "moderna"),
 ]
+
+
+
+
+print("STATIC_ROOT: "+str(STATIC_ROOT))
+print("STATIC_URL: "+str(STATIC_URL))
+print("MEDIA_ROOT: "+str(MEDIA_ROOT))
+print("MEDIA_URL: "+str(MEDIA_URL))
+print("STATICFILES_DIRS: "+str(STATICFILES_DIRS))
+print("")
