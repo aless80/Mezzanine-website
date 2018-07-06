@@ -231,8 +231,6 @@ if DJANGO_VERSION < (1, 9):
 INSTALLED_APPS = (
     "resume",
     "moderna",
-    # "flat", #nice animation for projects
-    #"nova",
     "categories",
     "categories.editor",
     "django.contrib.admin",
