@@ -139,7 +139,6 @@ FILE_UPLOAD_PERMISSIONS = 0o644
 #############
 # DATABASES #
 #############
-
 DATABASES = {
     "default": {
         # Add "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
@@ -383,3 +382,8 @@ else:
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "moderna"),
 ]
+
+TEMPLATE_DIRS = [
+    os.path.join(PROJECT_ROOT, "moderna/templates"),
+    os.path.join(PROJECT_ROOT, "templates"),
+    ]
