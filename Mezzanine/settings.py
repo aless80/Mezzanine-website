@@ -119,6 +119,7 @@ LANGUAGES = (
 # are displayed for error pages. Should always be set to ``False`` in
 # production. Best set to ``True`` in local_settings.py
 DEBUG = True
+DEBUG = False
 
 # Whether a user's session cookie expires when the Web browser is closed.
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
@@ -199,6 +200,36 @@ MEDIA_ROOT = os.path.join(BASE_DIR, *MEDIA_URL.strip("/").split("/"))
 
 # Package/module name to import the root urlpatterns from for the project.
 ROOT_URLCONF = "%s.urls" % PROJECT_APP
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "moderna"),
+    os.path.join(BASE_DIR, "resume"),
+]
+
+
+
+print("STATIC_ROOT: "+str(STATIC_ROOT))     #~/Mezzanine-website/static
+print("STATIC_URL: "+str(STATIC_URL))       #/static/
+print("MEDIA_ROOT: "+str(MEDIA_ROOT))       #~/Mezzanine-website/static/media
+print("MEDIA_URL: "+str(MEDIA_URL))         #/static/media/
+print("STATICFILES_DIRS: "+str(STATICFILES_DIRS))   #~/moderna
+print("")
+
+#I got these
+#                          ./resume/static/resume/img/panda_topgenes.png
+#                                ./moderna/static/img/works/panda_topgenes.png
+#but it fails/works with DEBUG=False/True :
+#http://127.0.0.1:8000/static/media/static/resume/img/panda_topgenes.png/
+
+#index.html has:
+#src="{% static 'img/works/panda_topgenes.png' %}"/>
+#
+
+#MEDIA_URL determines first part, but setting it to "/resume/" does not help
+
+
+
+
 
 TEMPLATES = [
     {
@@ -383,27 +414,3 @@ if os.environ.get('EMAIL_HOST_PASSWORD') is None:
     print('EMAIL_HOST_PASSWORD not found as environment variable. You might want to set it')
 else:
     EMAIL_HOST_PASSWORD=os.environ.get('EMAIL_HOST_PASSWORD')
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "moderna"),
-    os.path.join(BASE_DIR, "resume"),
-]
-
-
-
-print("STATIC_ROOT: "+str(STATIC_ROOT))     #~/Mezzanine-website/static
-print("STATIC_URL: "+str(STATIC_URL))       #/static/
-print("MEDIA_ROOT: "+str(MEDIA_ROOT))       #~/Mezzanine-website/static/media
-print("MEDIA_URL: "+str(MEDIA_URL))         #/static/media/
-print("STATICFILES_DIRS: "+str(STATICFILES_DIRS))   #~/moderna
-print("")
-
-#I got these
-#./resume/static/resume/img/panda_topgenes.png
-#./moderna/static/img/works/panda_topgenes.png
-#but it fails/works with DEBUG=False/True :
-#http://127.0.0.1:8000/static/img/works/panda_topgenes.png/ 
-
-#index.html has:
-#src="{% static 'img/works/panda_topgenes.png' %}"/>
-#
