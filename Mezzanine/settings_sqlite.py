@@ -92,7 +92,7 @@ USE_MODELTRANSLATION = False
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = [ '127.0.0.1','localhost','aless80.pythonanywhere.com' ]
+ALLOWED_HOSTS = [ '127.0.0.1','localhost','aless80.pythonanywhere.com', 'amarin.pythonanywhere.com']
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -164,7 +164,7 @@ DATABASES = {
 # Full filesystem path to the project.
 PROJECT_APP_PATH = os.path.dirname(os.path.abspath(__file__))
 PROJECT_APP = os.path.basename(PROJECT_APP_PATH)
-PROJECT_ROOT = BASE_DIR = os.path.dirname(PROJECT_APP_PATH)
+PROJECT_ROOT = BASE_DIR = os.path.dirname(os.path.dirname(PROJECT_APP_PATH))
 
 # Every cache key will get prefixed with this value - here we set it to
 # the name of the directory the project is in to try and use something
