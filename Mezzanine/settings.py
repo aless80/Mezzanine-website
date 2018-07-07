@@ -142,9 +142,9 @@ FILE_UPLOAD_PERMISSIONS = 0o644
 DATABASES = {
     "default": {
         # Add "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
-        "ENGINE": "django.db.backends.sqlite3",
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
         # DB name or path to database file if using sqlite3.
-        'NAME': os.path.join(os.path.dirname(os.path.abspath(__file__)), 'db.sqlite3'),
+        "NAME": "mezzanine",
         # Not used with sqlite3.
         "USER": "amarin",
         # Not used with sqlite3.
@@ -341,7 +341,7 @@ else:
 
 
 ##########
-# EMAIL #
+# EMAIL # 
 ##########
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
@@ -353,7 +353,7 @@ EMAIL_PORT = 587
 # PAGEDOWN SETTINGS #
 #####################
 #RICHTEXT_WIDGET_CLASS = 'mezzanine_pagedown.widgets.PageDownWidget'
-#RICHTEXT_FILTERS = 'mezzanine_pagedown.filters.custom'
+#RICHTEXT_FILTERS = 'mezzanine_pagedown.filters.custom'    
 #PAGEDOWN_MARKDOWN_EXTENSIONS = ('extra','codehilite','toc')
 #RICHTEXT_FILTER_LEVEL = 3
 #PAGEDOWN_SERVER_SIDE_PREVIEW = True
@@ -386,3 +386,10 @@ TEMPLATE_DIRS = [
     os.path.join(PROJECT_ROOT, "moderna/templates"),
     os.path.join(PROJECT_ROOT, "templates"),
     ]
+
+print("STATIC_ROOT: "+str(STATIC_ROOT))
+print("STATIC_URL: "+str(STATIC_URL))
+print("MEDIA_ROOT: "+str(MEDIA_ROOT))
+print("MEDIA_URL: "+str(MEDIA_URL))
+print("STATICFILES_DIRS: "+str(STATICFILES_DIRS))
+print("")
