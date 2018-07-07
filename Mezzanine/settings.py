@@ -165,8 +165,7 @@ DATABASES = {
 PROJECT_APP_PATH = os.path.dirname(os.path.abspath(__file__))       #/home/amarin/Mezzanine-website/Mezzanine
 PROJECT_APP = os.path.basename(PROJECT_APP_PATH)                    #Mezzanine
 #PROJECT_ROOT = os.path.dirname(os.path.dirname(PROJECT_APP_PATH))   #/home/amarin
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) #/home/amarin/Mezzanine-website
-PROJECT_ROOT=BASE_DIR
+PROJECT_ROOT = BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) #/home/amarin/Mezzanine-website
 
 # Every cache key will get prefixed with this value - here we set it to
 # the name of the directory the project is in to try and use something
@@ -181,7 +180,7 @@ STATIC_URL = "/static/"
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
-STATIC_ROOT = os.path.join(BASE_DIR, STATIC_URL.strip("/"))
+STATIC_ROOT = os.path.join(PROJECT_ROOT, STATIC_URL.strip("/"))
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
@@ -191,21 +190,6 @@ MEDIA_URL = STATIC_URL + "media/"
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
 MEDIA_ROOT = os.path.join(PROJECT_ROOT, *MEDIA_URL.strip("/").split("/"))
-
-file = open('/home/amarin/Mezzanine-website/test.txt', 'w')
-file.write("BASE_DIR:\n")
-file.write("%s\n" % BASE_DIR)
-file.write("PROJECT_ROOT:\n")
-file.write("%s\n" % PROJECT_ROOT)
-file.write("STATIC_URL:\n")
-file.write("%s\n" % STATIC_URL)
-file.write("STATIC_ROOT:\n")
-file.write("%s\n" % STATIC_ROOT)
-file.write("MEDIA_URL:\n")
-file.write("%s\n" % MEDIA_URL)
-file.write("MEDIA_ROOT:\n")
-file.write("%s\n" % MEDIA_ROOT)
-file.close()
 
 # Package/module name to import the root urlpatterns from for the project.
 ROOT_URLCONF = "%s.urls" % PROJECT_APP
@@ -248,8 +232,6 @@ if DJANGO_VERSION < (1, 9):
 INSTALLED_APPS = (
     "resume",
     "moderna",
-    # "flat", #nice animation for projects
-    #"nova",
     "categories",
     "categories.editor",
     "django.contrib.admin",
