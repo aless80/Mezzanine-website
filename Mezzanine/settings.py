@@ -142,9 +142,9 @@ FILE_UPLOAD_PERMISSIONS = 0o644
 DATABASES = {
     "default": {
         # Add "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
-        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "ENGINE": "django.db.backends.sqlite3",
         # DB name or path to database file if using sqlite3.
-        "NAME": "mezzanine",
+        'NAME': os.path.join(os.path.dirname(os.path.abspath(__file__)), 'db.sqlite3'),
         # Not used with sqlite3.
         "USER": "amarin",
         # Not used with sqlite3.
@@ -386,10 +386,3 @@ TEMPLATE_DIRS = [
     os.path.join(PROJECT_ROOT, "moderna/templates"),
     os.path.join(PROJECT_ROOT, "templates"),
     ]
-
-print("STATIC_ROOT: "+str(STATIC_ROOT))
-print("STATIC_URL: "+str(STATIC_URL))
-print("MEDIA_ROOT: "+str(MEDIA_ROOT))
-print("MEDIA_URL: "+str(MEDIA_URL))
-print("STATICFILES_DIRS: "+str(STATICFILES_DIRS))
-print("")
