@@ -162,9 +162,10 @@ DATABASES = {
 #########
 
 # Full filesystem path to the project.
-PROJECT_APP_PATH = os.path.dirname(os.path.abspath(__file__))       #~/Mezzanine-website/Mezzanine
+PROJECT_APP_PATH = os.path.dirname(os.path.abspath(__file__))       #/home/amarin/Mezzanine-website/Mezzanine
 PROJECT_APP = os.path.basename(PROJECT_APP_PATH)                    #Mezzanine
-PROJECT_ROOT = BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) #~/Mezzanine-website
+#PROJECT_ROOT = os.path.dirname(os.path.dirname(PROJECT_APP_PATH))   #/home/amarin
+PROJECT_ROOT = BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) #/home/amarin/Mezzanine-website
 
 # Every cache key will get prefixed with this value - here we set it to
 # the name of the directory the project is in to try and use something
