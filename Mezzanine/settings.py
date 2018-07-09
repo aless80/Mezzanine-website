@@ -141,16 +141,16 @@ FILE_UPLOAD_PERMISSIONS = 0o644
 #############
 DATABASES = {
     "default": {
-        # Add "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
-        "ENGINE": "django.db.backends.sqlite3",
+        # Ends with "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
+        "ENGINE": "django.db.backends.mysql",
         # DB name or path to database file if using sqlite3.
-        'NAME': os.path.join(os.path.dirname(os.path.abspath(__file__)), 'db.sqlite3'),
+        "NAME": "mezzanine_mysql",
         # Not used with sqlite3.
         "USER": "amarin",
         # Not used with sqlite3.
         "PASSWORD": "Set it up as environment variable",
         # Set to empty string for localhost. Not used with sqlite3.
-        "HOST": "localhost",
+        "HOST": "",
         # Set to empty string for default. Not used with sqlite3.
         "PORT": "",
     }
