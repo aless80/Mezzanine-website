@@ -1,0 +1,11 @@
+DEBUG:                     True
+DATABASES default ENGINE:  django.db.backends.mysql
+DATABASES default NAME:    mezzanine_mysql
+DATABASES default USER:    amarin
+PROJECT_APP:               Mezzanine
+PROJECT_ROOT:              /home/amarin/Mezzanine-website
+PROJECT_APP_PATH:          /home/amarin/Mezzanine-website/Mezzanine
+STATIC_URL:                /static/
+STATIC_ROOT:               /home/amarin/Mezzanine-website/static
+MEDIA_URL:                 /static/media/
+MEDIA_ROOT:                /home/amarin/Mezzanine-website/static/media

@@ -5,6 +5,9 @@ import os
 from django import VERSION as DJANGO_VERSION
 from django.utils.translation import ugettext_lazy as _
 
+#Determine if running on Development or in Production. Use that for DEBUG parameter
+import sys
+RUNNING_DEVSERVER = (len(sys.argv) > 1 and sys.argv[1] == 'runserver')
 
 ######################
 # MEZZANINE SETTINGS #
@@ -116,9 +119,9 @@ LANGUAGES = (
 )
 
 # A boolean that turns on/off debug mode. When set to ``True``, stack traces
-# are displayed for error pages. Should always be set to ``False`` in
-# production. Best set to ``True`` in local_settings.py
-DEBUG = True
+# are displayed for error pages. Best set to ``True`` in local_settings.py
+# Do not run with debug turned on in production!
+DEBUG = RUNNING_DEVSERVER
 
 # Whether a user's session cookie expires when the Web browser is closed.
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
@@ -312,7 +315,6 @@ OPTIONAL_APPS = (
 
 f = os.path.join(PROJECT_APP_PATH, "local_settings.py")
 if os.path.exists(f):
-    import sys
     import imp
     module_name = "%s.local_settings" % PROJECT_APP
     module = imp.new_module(module_name)
@@ -360,14 +362,12 @@ EMAIL_PORT = 587
 
 if os.environ.get('PASSWORD') is None:
     print('')
-    import sys
     sys.exit("Define an environment variable as follows:\nexport PASSWORD='database password'")
 
 DATABASES['default']['PASSWORD'] = os.environ.get('PASSWORD')
 
 if os.environ.get('SECRET_KEY') is None:
     print('')
-    import sys
     sys.exit("Define an environment variable as follows:\nexport SECRET_KEY='Project password'")
 
 SECRET_KEY=os.environ.get('SECRET_KEY')
@@ -385,3 +385,41 @@ TEMPLATE_DIRS = [
     os.path.join(PROJECT_ROOT, "moderna/templates"),
     os.path.join(PROJECT_ROOT, "templates"),
     ]
+
+# Print log
+if RUNNING_DEVSERVER:
+    print
+    print("DEBUG: ".ljust(27)+str(DEBUG))
+    print("DATABASES default ENGINE: ".ljust(27)+str(DATABASES["default"]['ENGINE']))
+    try: 
+        print("DATABASES default NAME: ".ljust(27)+str(DATABASES["default"]['NAME']))
+        print("DATABASES default USER: ".ljust(27)+str(DATABASES["default"]['USER']))
+    except:
+        pass
+    print("PROJECT_APP: ".ljust(27)+PROJECT_APP)
+    print("PROJECT_ROOT: ".ljust(27)+PROJECT_ROOT)
+    print("PROJECT_APP_PATH: ".ljust(27)+PROJECT_APP_PATH)
+    print("STATIC_URL: ".ljust(27)+STATIC_URL)
+    print("STATIC_ROOT: ".ljust(27)+STATIC_ROOT)
+    print("MEDIA_URL: ".ljust(27)+MEDIA_URL)
+    print("MEDIA_ROOT: ".ljust(27)+MEDIA_ROOT)
+else:
+    from io import open
+    log = os.path.join(PROJECT_ROOT, "settings_log.txt")
+    with open(log, 'w') as file:     
+        file.write("DEBUG: ".ljust(27)+str(DEBUG)+"\n")
+        #print(DATABASES)
+        file.write("DATABASES default ENGINE: ".ljust(27)+str(DATABASES["default"]['ENGINE'])+"\n")
+        try: 
+            file.write("DATABASES default NAME: ".ljust(27)+str(DATABASES["default"]['NAME'])+"\n")
+            file.write("DATABASES default USER: ".ljust(27)+str(DATABASES["default"]['USER'])+"\n")
+        except:
+            pass
+        file.write("PROJECT_APP: ".ljust(27)+PROJECT_APP+"\n")
+        file.write("PROJECT_ROOT: ".ljust(27)+PROJECT_ROOT+"\n")
+        file.write("PROJECT_APP_PATH: ".ljust(27)+PROJECT_APP_PATH+"\n")
+        file.write("STATIC_URL: ".ljust(27)+STATIC_URL+"\n")
+        file.write("STATIC_ROOT: ".ljust(27)+STATIC_ROOT+"\n")
+        file.write("MEDIA_URL: ".ljust(27)+MEDIA_URL+"\n")
+        file.write("MEDIA_ROOT: ".ljust(27)+MEDIA_ROOT+"\n")
+        file.close()
