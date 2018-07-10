@@ -159,7 +159,6 @@ DATABASES = {
     }
 }
 
-
 #########
 # PATHS #
 #########
@@ -349,6 +348,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'alessandromarin80@gmail.com'
 EMAIL_HOST_PASSWORD = 'Set it up as environment variable'
 EMAIL_PORT = 587
+DEFAULT_FROM_EMAIL = 'alessandromarin80@gmail.com'
 
 #####################
 # PAGEDOWN SETTINGS #

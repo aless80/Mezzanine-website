@@ -153,12 +153,11 @@ DATABASES = {
         # Not used with sqlite3.
         "PASSWORD": "Set it up as environment variable",
         # Set to empty string for localhost. Not used with sqlite3.
-        "HOST": "localhost",
+        "HOST": "",
         # Set to empty string for default. Not used with sqlite3.
         "PORT": "",
     }
 }
-
 
 #########
 # PATHS #
@@ -349,6 +348,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'alessandromarin80@gmail.com'
 EMAIL_HOST_PASSWORD = 'Set it up as environment variable'
 EMAIL_PORT = 587
+DEFAULT_FROM_EMAIL = 'alessandromarin80@gmail.com'
 
 #####################
 # PAGEDOWN SETTINGS #
