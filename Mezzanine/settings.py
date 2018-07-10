@@ -158,8 +158,6 @@ DATABASES = {
         "PORT": "",
     }
 }
-if not RUNNING_DEVSERVER:
-    DATABASES["default"]["HOST"] = "amarin.mysql.pythonanywhere-services.com"
 
 #########
 # PATHS #
