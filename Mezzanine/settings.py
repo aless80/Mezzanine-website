@@ -158,7 +158,8 @@ DATABASES = {
         "PORT": "",
     }
 }
-
+if not RUNNING_DEVSERVER:
+    DATABASES["default"]["HOST"] = "amarin.mysql.pythonanywhere-services.com"
 
 #########
 # PATHS #
@@ -403,6 +404,7 @@ if RUNNING_DEVSERVER:
     print("STATIC_ROOT: ".ljust(27)+STATIC_ROOT)
     print("MEDIA_URL: ".ljust(27)+MEDIA_URL)
     print("MEDIA_ROOT: ".ljust(27)+MEDIA_ROOT)
+    print(sys.argv)
 else:
     from io import open
     log = os.path.join(PROJECT_ROOT, "settings_log.txt")
@@ -422,5 +424,7 @@ else:
         file.write("STATIC_ROOT: ".ljust(27)+STATIC_ROOT+"\n")
         file.write("MEDIA_URL: ".ljust(27)+MEDIA_URL+"\n")
         file.write("MEDIA_ROOT: ".ljust(27)+MEDIA_ROOT+"\n")
+        file.write("sys.argv")
+        file.write(sys.argv)
         file.close()
         
