@@ -122,7 +122,6 @@ LANGUAGES = (
 # are displayed for error pages. Best set to ``True`` in local_settings.py
 # Do not run with debug turned on in production!
 DEBUG = RUNNING_DEVSERVER
-DEBUG = False
 
 # Whether a user's session cookie expires when the Web browser is closed.
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
