@@ -423,4 +423,3 @@ else:
         file.write("MEDIA_URL: ".ljust(27)+MEDIA_URL+"\n")
         file.write("MEDIA_ROOT: ".ljust(27)+MEDIA_ROOT+"\n")
         file.close()
-        
