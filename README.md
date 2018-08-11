@@ -6,6 +6,7 @@ My mezzanine-based site and blog
 Theme adapted from [thecodinghouse/mezzanine-themes](https://github.com/thecodinghouse/mezzanine-themes)
 
 ## Installation
+### Mezzanine
 Create a virtual environment and install from requirements.txt: 
 
 ```
@@ -15,6 +16,8 @@ virtualenv Mezzanine
 source Mezzanine/bin/activate
 (Mezzanine)>pip install -r requirements.txt
 ```
+
+### Database: postgreSQL or mySQL
 
 The Mezzanine/settings.py file contains, among other settings, the database used for this project. Replace Mezzanine/settings.py with Mezzanine/settings_postgresql.py if you want to use postgreSQL, or with Mezzanine/settings_sqlite.py to use SQLite. Mezzanine/settings_mysql_pythonanywhere.py can be used in pythonanywhere with a mySQL databse (follow the instructions in pythonanywhere). 
 
@@ -42,6 +45,7 @@ Import my database:
 mysql -u amarin -p mezzanine_mysql < Mezzanine/mezzanine_mysql_dump.sql
 ```
 
+### Setup
 There are some settings you might want to change in the Mezzanine/settings.py file. Two obvious ones are the default user in the DATABASES dictionary (I have amarin, it should match the one you set up in the previous steps for postgreSQL), and the email address (check the EMAIL_* variables). 
 
 Before launching, export environment variables for SECRET_KEY, PASSWORD, and (optionally) EMAIL_HOST_PASSWORD: 
@@ -55,3 +59,4 @@ Test on a local server:
 ```
 python manage.py runserver
 ```
+
