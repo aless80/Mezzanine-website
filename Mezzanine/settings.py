@@ -147,13 +147,13 @@ DATABASES = {
         # Ends with "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
         "ENGINE": "django.db.backends.mysql",
         # DB name or path to database file if using sqlite3.
-        "NAME": "mezzanine_mysql",
+        "NAME": "amarin$mezzanine_mysql",
         # Not used with sqlite3.
         "USER": "amarin",
         # Not used with sqlite3.
         "PASSWORD": "Set it up as environment variable",
         # Set to empty string for localhost. Not used with sqlite3.
-        "HOST": "",
+        "HOST": "amarin.mysql.pythonanywhere-services.com",
         # Set to empty string for default. Not used with sqlite3.
         "PORT": "",
     }
@@ -341,7 +341,7 @@ else:
 
 
 ##########
-# EMAIL # 
+# EMAIL #
 ##########
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
@@ -354,7 +354,7 @@ DEFAULT_FROM_EMAIL = 'alessandromarin80@gmail.com'
 # PAGEDOWN SETTINGS #
 #####################
 #RICHTEXT_WIDGET_CLASS = 'mezzanine_pagedown.widgets.PageDownWidget'
-#RICHTEXT_FILTERS = 'mezzanine_pagedown.filters.custom'    
+#RICHTEXT_FILTERS = 'mezzanine_pagedown.filters.custom'
 #PAGEDOWN_MARKDOWN_EXTENSIONS = ('extra','codehilite','toc')
 #RICHTEXT_FILTER_LEVEL = 3
 #PAGEDOWN_SERVER_SIDE_PREVIEW = True
@@ -391,7 +391,7 @@ if RUNNING_DEVSERVER:
     print
     print("DEBUG: ".ljust(27)+str(DEBUG))
     print("DATABASES default ENGINE: ".ljust(27)+str(DATABASES["default"]['ENGINE']))
-    try: 
+    try:
         print("DATABASES default NAME: ".ljust(27)+str(DATABASES["default"]['NAME']))
         print("DATABASES default USER: ".ljust(27)+str(DATABASES["default"]['USER']))
     except:
@@ -406,11 +406,11 @@ if RUNNING_DEVSERVER:
 else:
     from io import open
     log = os.path.join(PROJECT_ROOT, "settings_log.txt")
-    with open(log, 'w') as file:     
+    with open(log, 'w') as file:
         file.write("DEBUG: ".ljust(27)+str(DEBUG)+"\n")
         #print(DATABASES)
         file.write("DATABASES default ENGINE: ".ljust(27)+str(DATABASES["default"]['ENGINE'])+"\n")
-        try: 
+        try:
             file.write("DATABASES default NAME: ".ljust(27)+str(DATABASES["default"]['NAME'])+"\n")
             file.write("DATABASES default USER: ".ljust(27)+str(DATABASES["default"]['USER'])+"\n")
         except:
