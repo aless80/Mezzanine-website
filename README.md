@@ -54,7 +54,7 @@ export SECRET_KEY='my secret key'
 export PASSWORD='database password'
 export EMAIL_HOST_PASSWORD='gmail password'
 ```
-
+### Running locally
 Test on a local server:
 ```
 python manage.py runserver
