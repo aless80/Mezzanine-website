@@ -78,3 +78,7 @@ Export site and blog data from mysql:
 ```
 mysqldump -u amarin -p mezzanine_mysql > Mezzanine/mezzanine_mysql_dump.sql
 ```
+Import DB after synchronizing git in pythonanywhere
+```
+mysql -u amarin -h amarin.mysql.pythonanywhere-services.com -p 'amarin$mezzanine_mysql' < Mezzanine/mezzanine_mysql_dump.sql
+```
