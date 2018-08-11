@@ -18,7 +18,7 @@ source Mezzanine/bin/activate
 
 The Mezzanine/settings.py file contains, among other settings, the database used for this project. Replace Mezzanine/settings.py with Mezzanine/settings_postgresql.py if you want to use postgreSQL, or with Mezzanine/settings_sqlite.py to use SQLite. Mezzanine/settings_mysql_pythonanywhere.py can be used in pythonanywhere with a mySQL databse (follow the instructions in pythonanywhere). 
 
-Install and setup postgreSQL if you decided to use it:
+Setup postgreSQL or mySQL. For postgreSQL:
 ```
 sudo -u postgres createuser --superuser admin
 sudo -u postgres psql   #log in psql interface
@@ -26,6 +26,15 @@ postgres=# CREATE DATABASE mezzanine;
 postgres=# CREATE USER amarin WITH PASSWORD 'database password';
 postgres=# ALTER USER admin WITH PASSWORD 'new_password'; #Change password if you forgot it
 postgres=# \q
+```
+
+For mySQL:
+```
+mysql -u root -p
+mysql> CREATE DATABASE mezzanine_mysql;
+mysql> GRANT ALL PRIVILEGES ON *.* TO 'amarin'@'localhost' IDENTIFIED BY 'database password';
+mysql> SET PASSWORD FOR 'amarin'@'localhost' = PASSWORD('new_password'); #Change password if you forgot it
+mysql> \q
 ```
 
 There are some settings you might want to change in the Mezzanine/settings.py file. Two obvious ones are the default user in the DATABASES dictionary (I have amarin, it should match the one you set up in the previous steps for postgreSQL), and the email address (check the EMAIL_* variables). 
