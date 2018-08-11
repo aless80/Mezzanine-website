@@ -19,7 +19,7 @@ source Mezzanine/bin/activate
 
 ### Database: postgreSQL or mySQL
 
-The Mezzanine/settings.py file contains, among other settings, the database used for this project. Replace Mezzanine/settings.py with one of these files using postgreSQL, SQLite, mySQL, mySQL in pythonanywhere, respectively
+The Mezzanine/settings.py file contains, among other settings, the database used for this project. Replace Mezzanine/settings.py with one of these files using postgreSQL, SQLite, mySQL, mySQL in pythonanywhere, respectively:
 
 ```
 Mezzanine/settings_postgresql.py 
