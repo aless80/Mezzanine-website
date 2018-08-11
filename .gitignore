@@ -1,6 +1,7 @@
 *.pyc
 *.pyo
 *.db
+static/CACHE
 .DS_Store
 .coverage
 local_settings.py
