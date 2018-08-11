@@ -40,11 +40,6 @@ mysql> SET PASSWORD FOR 'amarin'@'localhost' = PASSWORD('new_password'); #Change
 mysql> \q
 ```
 
-Import my database:
-```
-mysql -u amarin -p mezzanine_mysql < Mezzanine/mezzanine_mysql_dump.sql
-```
-
 ### Setup
 There are some settings you might want to change in the Mezzanine/settings.py file. Two obvious ones are the default user in the DATABASES dictionary (I have amarin, it should match the one you set up in the previous steps for postgreSQL), and the email address (check the EMAIL_* variables). 
 
@@ -55,8 +50,24 @@ export PASSWORD='database password'
 export EMAIL_HOST_PASSWORD='gmail password'
 ```
 ### Running locally
-Test on a local server:
+Import my data to mySQL:
+```
+mysql -u amarin -p mezzanine_mysql < Mezzanine/mezzanine_mysql_dump.sql
+```
+
+Import my data to postgreSQL:
+```
+python manage.py loaddata resume/fixtures/data.json
+```
+
+Test on a local server
 ```
 python manage.py runserver
 ```
 
+
+### Notes
+Export site and blog data from mysql:
+```
+mysqldump -u amarin -p mezzanine_mysql > Mezzanine/mezzanine_mysql_dump.sql
+```
