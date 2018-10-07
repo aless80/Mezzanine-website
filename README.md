@@ -6,6 +6,20 @@ My mezzanine-based site and blog
 Theme adapted from [thecodinghouse/mezzanine-themes](https://github.com/thecodinghouse/mezzanine-themes)
 
 ## Installation
+
+### System requirements
+Make sure you have standard Python, MySQL,  and Django libraries installed on your system. This should work for linux: 
+
+```
+sudo apt-get update
+sudo apt-get install python-dev
+sudo apt install python-pip
+sudo apt-get install mysql-server
+sudo apt-get install python-mysqldb
+sudo apt-get install postgresql postgresql-contrib
+pip install django
+pip install mysql-python```
+
 ### Mezzanine
 Create a virtual environment and install from requirements.txt: 
 
@@ -40,7 +54,7 @@ postgres=# \q
 
 For mySQL:
 ```
-mysql -u root -p
+sudo mysql
 mysql> CREATE DATABASE mezzanine_mysql;
 mysql> GRANT ALL PRIVILEGES ON *.* TO 'amarin'@'localhost' IDENTIFIED BY 'database password';
 mysql> SET PASSWORD FOR 'amarin'@'localhost' = PASSWORD('new_password'); #Change password if you forgot it
