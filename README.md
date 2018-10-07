@@ -18,7 +18,8 @@ sudo apt-get install mysql-server
 sudo apt-get install python-mysqldb
 sudo apt-get install postgresql postgresql-contrib
 pip install django
-pip install mysql-python```
+pip install mysql-python
+```
 
 ### Mezzanine
 Create a virtual environment and install from requirements.txt: 
